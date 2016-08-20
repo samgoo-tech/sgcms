@@ -919,7 +919,7 @@ h6.shortcodes-caption{
 
 
 
-/*Ò³Êýµ¼º½¿ò¼Ü*/
+/*Ò³ï¿½ï¿½ï¿½ï¿½*/
 .page{ width:790px; height:31px; padding:4px; float:left;}
 .page a{ text-decoration:none;}
 .page a:hover{ text-decoration:none;}
@@ -3967,6 +3967,17 @@ a.button.details-button:hover:after{
 	padding:20px 18px 20px 20px;
 }
 
+.banner.red-banner{
+	background:#a82512;
+	padding:20px 18px 20px 20px;
+}
+
+.red-banner:hover{
+	background:#de3d21;
+	text-decoration:none;
+}
+
+
 .banner.donate-banner h5{
 	margin:0 0 8px;
 	font-size:14px;
@@ -5743,8 +5754,8 @@ blockquote{
 	border-left:3px solid #63b2f5;
 	font-size:16px;
 	color:#274472;
-	padding:20px;
-	font-weight:700;
+	/* padding:20px; */
+	/* font-weight:100; */
 	text-align:left!important;
 	background:#fafbfd;
 }
@@ -6036,7 +6047,7 @@ blockquote.link-quote:after{
 
 .divider{
 	display:block;
-	margin:30px 0;
+	/* margin:30px 0; */
 	border-top:1px solid #dee0e5;
 }
 

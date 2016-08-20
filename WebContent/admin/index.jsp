@@ -1,7 +1,7 @@
 <%@ page language="java"  pageEncoding="UTF-8"%>
 <HTML>
 <HEAD>
-<TITLE>FreeCMS-管理中心</TITLE>
+<TITLE>SGCMS-管理中心</TITLE>
 <script> 
 function changeDisplayMode(){
 	if(document.getElementById("bottomframes").cols=="170,7,*"){

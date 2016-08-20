@@ -107,7 +107,7 @@ A:active {
 	background-color: #ffffff;
 }
 
-.button{border:1px #93b9dc solid;background:url(button_bg.gif) repeat;cursor:hand}
+.button{border:1px #1b8ff4 solid;background:url(button_bg.gif) repeat;cursor:hand;color: #fff}
 
 .summary-title { background:#f0f6fc; border-top:1px #d5e3ef solid; }
 

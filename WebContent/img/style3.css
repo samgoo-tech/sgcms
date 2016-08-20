@@ -112,7 +112,7 @@ A:active {
 }
 
 
-.button{padding:0px 6px; height:20px; cursor:pointer; margin-top:2px; margin-bottom:10px;}
+.button{padding:0px 6px; height:20px; cursor:pointer; margin-top:2px; margin-bottom:10px;color: white;font-weight: bold;}
 
 .summary-title { line-height:26px; height:26px; }
 

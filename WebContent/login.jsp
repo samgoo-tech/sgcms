@@ -16,7 +16,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>FreeCMS-管理员登录</title>
+<title>SGCMS-管理员登录</title>
 <script src="js/jquery-1.5.1.min.js"></script>
 <script src="js/cookie.js"></script>
 <script language="JavaScript"> 
@@ -52,7 +52,7 @@ img {border:0}
 .txt2 {font-size:11px!important; font-size /**/:8pt;font-family:tahoma;}
 .left {float:left;}
 .right {float:right;}
-#Login {width:255px;float:left;font-family:tahoma;color:#494949}
+#Login {width:355px;float:right;font-family:tahoma;color:#494949}
 #Login .top {height:4px;background:url(img/login_top_bg.gif) repeat-x;}
 #Login .login_bg {height:310px;background:#F6F6F6;border-right:1px solid #8A8A8A;border-left:1px solid #8A8A8A;}
 #Login .lg_title {text-align:left;height:23px;margin:0 11px 0px 11px;padding-top:3px;padding-left:4px;border-bottom:1px solid #B5B5B5;}
@@ -73,112 +73,112 @@ img {border:0}
 </style>
 <body >
 <form id="fm1" class="fm-v clearfix" action="login_login.do" method="post" onsubmit="return submitForm()">
-<div id="Logo">
+<!-- <div id="Logo">
 	<div style="float:left"><div class="lg"><img width="165" src="img/logo.png" border="0" /></div><br/></div>
 	<div class="nav"></div>
     <div style="clear:both"></div>
-</div>
+</div> -->
 <div id="Main">
 	
-  <jsp:include page="inc/banner.jsp"></jsp:include>
+
 	<div id="Login">
 		<div class="top">
 			<div class="left"><img src="img/login_conn_left.gif" width="4" height="4" /></div>
 			<div class="right"><img src="img/login_conn_right.gif" width="4" height="4" /></div>
 		</div>
 		<div class="login_bg">
-<div>
-</div>
- 
- 
-			<div class="lg_title"><b class="txt">管理员登录</b></div>
-			<div class="lg_title2"><span id="MessageLabel" style="display:inline-block;width:100%;font-size:12px;text-align:center">
-			<font color="red"><b></b></font>
-			</span><br /></div>
-			
-			<div class="input_pwd">用户名:
-			
-						
-						
-						
-						<input id="username" name="user.loginname" class="colorblur" tabindex="1" accesskey="n" type="text" value="" size="25" autocomplete="false"/>
-						
-			<span id="RequiredFieldValidator1" style="color:Red;">*</span>
-			<span id="ctl01" style="color:Red;display:none;">*</span></div>
-            
-			<div class="input_pwd">密　码:	
-						<input id="password" name="user.pwd" class="colorblur" tabindex="2" accesskey="p" type="password" value="" size="25" autocomplete="off"/>
-                   <span id="ctl02" style="color:Red;">*</span>
+				
+	 
+				<div class="lg_title"><b class="txt">管理员登录</b></div>
+				<div class="lg_title2"><span id="MessageLabel" style="display:inline-block;width:100%;font-size:12px;text-align:center">
+				<font color="red"><b></b></font>
+				</span><br /></div>
+				
+				<div class="input_pwd">用户名:
+				
+							
+							
+							
+							<input id="username" name="user.loginname" class="colorblur" tabindex="1" accesskey="n" type="text" value="" size="25" autocomplete="false"/>
+							
+				<span id="RequiredFieldValidator1" style="color:Red;">*</span>
+				<span id="ctl01" style="color:Red;display:none;">*</span></div>
+	            
+				<div class="input_pwd">密　码:	
+							<input id="password" name="user.pwd" class="colorblur" tabindex="2" accesskey="p" type="password" value="" size="25" autocomplete="off"/>
+	                   <span id="ctl02" style="color:Red;">*</span>
+				</div>
+				<div class="input_pwd">验证码:	
+							<input id="ValidateCode" name="ValidateCode" class="colorblur" tabindex="2" accesskey="p" type="text" value="" size="5" maxlength="4" autocomplete="off"/>
+	                   <img src="image.jsp" title="点击重新获取验证码" style="cursor:hand" onclick="this.src='image.jsp?date='+new Date();"/>
+	                   <span id="ctl02" style="color:Red;">*</span>
+				</div>
+	            
+				<div class="input_post">
+							<input type="hidden" name="lt" value="_c3F041F78-53B9-69A5-3B3C-01BAB6E90925_k37408022-0986-F9AF-9DBB-8FBEC82968E9" />
+							<input type="hidden" name="_eventId" value="submit" />
+	 
+	                        <input class="button"   name="submit" accesskey="l" value="登 录" tabindex="4" type="submit" />
+	                   
+				</div>
+				<div class="input_fpwd"><input id="RememberMe" type="checkbox" name="RememberMe" onclick="RememberMeClick()"/><label for="RememberMe">在此计算机上保留登录帐号</label></div>
+	            
+	        	 <script>
+	            if(GetCookie("FreeCMS_loginName")!=null&&GetCookie("FreeCMS_loginName")!=""){
+	            	document.getElementById("RememberMe").checked=true;
+	            }
+	            if(GetCookie("FreeCMS_loginName")!=null)document.getElementById("username").value=GetCookie("FreeCMS_loginName");
+	            function RememberMeClick(){
+	            	if(document.getElementById("RememberMe").checked==false){
+	            		//删除cookie
+	            		DelCookie("FreeCMS_loginName");
+	            	}
+	            }
+	            function submitForm(){
+	            	
+					if($.trim($("#username").val())==""){
+						alert("请输入用户名!");
+						$("#username").focus();
+						return false;
+					}
+					if($.trim($("#password").val())==""){
+						alert("请输入密码!");
+						$("#password").focus();
+						return false;
+					}
+					if($.trim($("#ValidateCode").val())==""){
+						alert("请输入验证码!");
+						$("#ValidateCode").focus();
+						return false;
+					}
+	            	if(document.getElementById("RememberMe").checked==true){
+	            		//设置cookie
+	            		SetCookie("FreeCMS_loginName",document.getElementById("username").value,60*60*24*365);
+	            	}
+	            	return true;
+	            }
+	            $("#username").focus();
+	            </script>
+	            <div class="lg_title1"></div>
+			  <div class="txt3">
+				<jsp:include page="util/sysInfo.jsp"></jsp:include>
+				</div>
+	            
+	            
+	 
+	<div>
+	 
+	</div>
+	 
+				
 			</div>
-			<div class="input_pwd">验证码:	
-						<input id="ValidateCode" name="ValidateCode" class="colorblur" tabindex="2" accesskey="p" type="text" value="" size="5" maxlength="4" autocomplete="off"/>
-                   <img src="image.jsp" title="点击重新获取验证码" style="cursor:hand" onclick="this.src='image.jsp?date='+new Date();"/>
-                   <span id="ctl02" style="color:Red;">*</span>
-			</div>
-            
-			<div class="input_post">
-						<input type="hidden" name="lt" value="_c3F041F78-53B9-69A5-3B3C-01BAB6E90925_k37408022-0986-F9AF-9DBB-8FBEC82968E9" />
-						<input type="hidden" name="_eventId" value="submit" />
- 
-                        <input class="button"   name="submit" accesskey="l" value="登 录" tabindex="4" type="submit" />
-                   
-			</div>
-			<div class="input_fpwd"><input id="RememberMe" type="checkbox" name="RememberMe" onclick="RememberMeClick()"/><label for="RememberMe">在此计算机上保留登录帐号</label></div>
-            
-        	 <script>
-            if(GetCookie("FreeCMS_loginName")!=null&&GetCookie("FreeCMS_loginName")!=""){
-            	document.getElementById("RememberMe").checked=true;
-            }
-            if(GetCookie("FreeCMS_loginName")!=null)document.getElementById("username").value=GetCookie("FreeCMS_loginName");
-            function RememberMeClick(){
-            	if(document.getElementById("RememberMe").checked==false){
-            		//删除cookie
-            		DelCookie("FreeCMS_loginName");
-            	}
-            }
-            function submitForm(){
-            	
-				if($.trim($("#username").val())==""){
-					alert("请输入用户名!");
-					$("#username").focus();
-					return false;
-				}
-				if($.trim($("#password").val())==""){
-					alert("请输入密码!");
-					$("#password").focus();
-					return false;
-				}
-				if($.trim($("#ValidateCode").val())==""){
-					alert("请输入验证码!");
-					$("#ValidateCode").focus();
-					return false;
-				}
-            	if(document.getElementById("RememberMe").checked==true){
-            		//设置cookie
-            		SetCookie("FreeCMS_loginName",document.getElementById("username").value,60*60*24*365);
-            	}
-            	return true;
-            }
-            $("#username").focus();
-            </script>
-            <div class="lg_title1"></div>
-		  <div class="txt3">
-			<jsp:include page="util/sysInfo.jsp"></jsp:include>
-			</div>
-            
-            
- 
-<div>
- 
-</div>
- 
-			
-		</div>
 		<div class="bottom">
 			<div class="left"><img src="img/login_conn_left_b.gif" width="4" height="4"  /></div>
 			<div class="right"><img src="img/login_conn_right_b.gif" width="4" height="4" /></div>
 		</div>
+	
 	</div>
+	
   <div style="clear:both"></div>
 </div>
  <jsp:include page="inc/foot.jsp"></jsp:include>

@@ -142,7 +142,7 @@ function show(type){
 	<body class="todaybody">
 <DIV class="column">
 				<div class="columntitle">
-					欢迎使用FreeCMS
+					欢迎使用SGCMS
 				</div>
 				<br/>
 				<div style="text-align:left">
@@ -185,7 +185,7 @@ function show(type){
 					id="accountType"></span>
 				<div class="oneheight"></div>
 				<div class="level level_no" style="">
-					欢迎使用FreeCMS系统 <br/>
+					欢迎使用SGCMS系统 <br/>
 			<jsp:include page="../util/sysInfo.jsp"></jsp:include>
 				</div>
 			</li>
