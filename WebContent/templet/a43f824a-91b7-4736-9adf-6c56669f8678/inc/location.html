@@ -1,0 +1,16 @@
+<!-- Page Heading -->
+			<section class="section page-heading animate-onscroll">
+				
+				<p class="breadcrumb">
+				
+				 <a href="${contextPath}site/${site.sourcepath}/index.html">首页</a>
+            	<@channelPath siteid="${site.id}" id="${currChannel.id}" ;channel>
+            	-> <a href="${channel.pageurl}">${channel.name}</a>
+			  	</@channelPath>
+			  	
+			  	<#if currInfo??>-${currInfo.title!""}</#if>
+				
+				</p>
+				
+			</section>
+<!-- Page Heading -->

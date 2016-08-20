@@ -1,0 +1,119 @@
+
+
+
+							
+<!-- Container -->
+	<div class="container">
+			
+	<#include "inc/header.html"/>		
+	
+			
+		<section id="content">	
+			
+
+		<#include "inc/location.html"/>
+			
+			
+			<!-- Section -->
+			<section class="section full-width-bg gray-bg">
+				
+				<div class="row">
+				
+					<div class="col-lg-9 col-md-9 col-sm-8 col-lg-push-3 col-md-push-3 col-sm-push-4">
+					
+						
+				
+					<@infoPage siteid="${site.id}" channelid="${currChannel.id}" num="5" page="${page}"
+					pagenum="${pagenum!0}" titleLen="38" dateFormat="yyyy-MM-dd"; infoList,pager>
+					
+					<div class="media-items row">
+					
+						<#list infoList as info>
+						
+						
+					 <div class="col-lg-4 col-md-6 col-sm-12 mix category-photos" data-nameorder="1" data-dateorder="3">
+							
+									<!-- Media Item -->
+							<div class="media-item animate-onscroll ">
+								
+								<div class="media-image">
+								
+									<img
+											src="${contextPath}${(info.img!"")?replace("/", "" , "f")}"  />
+									
+									<div class="media-hover">
+										<div class="media-icons">
+											<a href="${contextPath}${(info.img!"")?replace("/", "" , "f")}" data-group="media-jackbox" class="jackbox media-icon"><i class="icons icon-zoom-in"></i></a>
+												<a href="${info.pageurl}" class="media-icon"><i class="icons icon-link"></i></a>
+										</div>
+									</div>
+								
+								</div>
+								
+																
+								<div class="media-info">
+								
+									<div class="media-header">
+										
+										<div class="media-format">
+											<div>
+											<i class="icons icon-picture"></i>
+											</div>
+										</div>
+										
+										<div class="media-caption">
+												<h2><a href="${info.pageurl}">${info.showtitle}</a></h2>
+											<!-- <span class="tags"><a href="#">Politics</a>, <a href="#">Meetings</a>, <a href="#">Photos</a></span> -->
+										</div>
+										
+									</div>
+									
+									<div class="media-description">
+										
+										<p>
+													<@html code='${info.description!""}' length='100';value>
+													${value}
+													</@html>
+													</p>
+													
+									</div>
+									
+									<div class="media-button">
+										<a href="${info.pageurl}" class="button big button-arrow">更多</a>
+											
+									</div>
+								
+								</div>
+								
+																
+							</div>
+							<!-- /Media Item -->							
+							</div>	
+						
+						
+							
+						</#list>
+						</div>			
+							
+					<center> <div class="page" id="case_page">${pager.pageStr}</div></center>	
+				
+					</@infoPage>		
+						
+					
+						
+					</div>
+						
+						
+				<#include "inc/left.html"/>							
+					
+				
+				</div>
+				
+			</section>
+			<!-- /Section -->
+		
+		</section>
+
+<#include "inc/footer.html"/>
+</div>
+<!-- /Container -->	

@@ -1,0 +1,90 @@
+		<!-- Sidebar -->
+			
+			<div class="col-lg-3 col-md-3 col-sm-4 col-lg-pull-9 col-md-pull-9 col-sm-pull-8 sidebar">
+						
+					  
+				<@channelList siteid="${site.id}" parid="${currChannel.parid}" ;sonChannel>
+				
+					 <div class="banner-wrapper">
+					   
+					<a class="banner animate-onscroll"  href="${sonChannel.pageurl}"
+						<#if currChannel.id==sonChannel.id>
+						 style="background-position:0 100%;color:#FFF;"
+						 </#if>>
+						 <i class="icons icon-calendar"></i>
+						<h4> ${sonChannel.name}</h4>
+					 </a>
+						 
+					</div>
+					 
+			    </@channelList>
+					  
+					  
+						<div class="social-media animate-onscroll">
+							<span class="small-caption">Get connected:</span>
+							<ul class="social-icons">
+								<li class="facebook"><a href="#" class="tooltip-ontop" title="Facebook"><i class="icons icon-facebook"></i></a></li>
+								<li class="twitter"><a href="#" class="tooltip-ontop" title="Twitter"><i class="icons icon-twitter"></i></a></li>
+								<li class="google"><a href="#" class="tooltip-ontop" title="Google Plus"><i class="icons icon-gplus"></i></a></li>
+								<li class="youtube"><a href="#" class="tooltip-ontop" title="Youtube"><i class="icons icon-youtube-1"></i></a></li>
+								<li class="flickr"><a href="#" class="tooltip-ontop" title="Flickr"><i class="icons icon-flickr-4"></i></a></li>
+								<li class="email"><a href="#" class="tooltip-ontop" title="Email"><i class="icons icon-mail"></i></a></li>
+							</ul>
+							<ul class="social-buttons">
+								<li>
+									
+								</li>
+								<li class="facebook-share">
+									<div class="fb-share-button" data-href="https://developers.facebook.com/docs/plugins/" data-type="button_count"></div>
+								</li>
+								
+							</ul>
+						</div>						
+							
+						<@channel siteid="${site.id}" pagemark="hdjl" ;channel>	
+							<!-- Upcoming Events -->
+						<div class="sidebar-box white animate-onscroll">
+						
+							<h3>${channel.name}</h3>
+							
+							<ul class="upcoming-events">
+							
+								<@channelList siteid="${site.id}" parid="${channel.id}" ;sonChannel,index>
+							
+								<!-- Event -->
+								<li>
+									<div class="date">
+										<span>
+											<span class="day">${index+1}</span>
+										</span>
+									</div>
+									
+									<div class="event-content">
+										<h6><a href="${sonChannel.pageurl}">${sonChannel.name}</a></h6>
+									</div>
+								</li>
+								<!-- /Event -->
+								 </@channelList>
+								
+								
+								
+								
+							</ul>
+							</div>
+						<!-- /Upcoming Events -->	
+						
+						</@channel>
+											
+						<@infoList siteid="${site.id}" channelPagemark="ztbd" num="5" titleLen="23" ; info,index >	
+						<!-- Image Banner -->
+						<div class="sidebar-box image-banner animate-onscroll">
+							<a href="${info.pageurl}">
+								<img src="${contextPath}${(info.img!"")?replace("/", "" , "f")}" alt="">
+								<h3 class="animate-onscroll">专题报道</h3>
+							</a>
+						</div>
+						<!-- /Image Banner -->	
+						</@infoList>						
+									
+					</div>
+					<!-- /Sidebar -->

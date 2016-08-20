@@ -1,0 +1,129 @@
+	<!-- Footer -->
+			<footer id="footer">
+				
+				<!-- Main Footer -->
+				<div id="main-footer">
+					
+					<div class="row">
+						
+						<div class="col-lg-3 col-md-3 col-sm-6 animate-onscroll">
+							
+							<h4>公司介绍</h4>
+							
+							<p>武汉市工程咨询部（下简称咨询部）于1986年7月经武汉市人民政府批准成立，是上世纪八十年代随着我国投资体制改革在国内率先成立的地方综合性工程咨询机构之一，主要任务是为政府和企业对建设项目的投资决策与实施提供咨询服务。</p>
+							
+						</div>
+						
+						<div class="col-lg-3 col-md-3 col-sm-6 animate-onscroll">
+							
+							<h4>友情合作</h4>
+								
+							<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 menu-container" style="width: 300px">
+								
+								<ul class="menu">
+									<li><a href="http://www.sdpc.gov.cn/"><img src="${contextPath}site/${site.sourcepath}/resources/img/wiecc/1.jpg	"></a></li>
+									<li><a href="http://www.whjw.gov.cn/"><img src="${contextPath}site/${site.sourcepath}/resources/img/wiecc/2.jpg"></a></li>
+									<li><a href="http://www.hbjw.gov.cn/"><img src="${contextPath}site/${site.sourcepath}/resources/img/wiecc/3.jpg"></a></li>
+								</ul>
+							</div>							
+						</div>
+						
+						<div class="col-lg-3 col-md-3 col-sm-6 twitter-widget-area animate-onscroll">
+							<h4>关注我们</h4>
+							<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 menu-container">
+								<img alt="" src="${contextPath}site/${site.sourcepath}/resources/img/xs.png">
+							</div>
+						</div>
+						
+						<div class="col-lg-3 col-md-3 col-sm-6 animate-onscroll">
+							<@channel siteid="${site.id}" pagemark="gywm" ;channel>	
+							<h4>${channel.name}</h4>
+							<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 menu-container">
+								
+								<ul class="menu">
+								<@channelList siteid="${site.id}" parid="${channel.id}" ;sonChannel,index>
+									<li><a href="${sonChannel.pageurl}">${sonChannel.name}</a></li>
+								 </@channelList>	
+								</ul>
+								
+							</div>
+							</@channel>
+						</div>
+						
+					</div>
+					
+				</div>
+				<!-- /Main Footer -->
+				<!-- Lower Footer -->
+				<div id="lower-footer">
+					
+					<div class="row">
+						
+						<div class="col-lg-6 col-md-6 col-sm-6 animate-onscroll" style="width: 80%">
+						
+							<p class="copyright">© 2007-2016 版权所有  武汉市工程咨询部、武汉市国际工程投资咨询公司  鄂ICP备09004450号</p>
+							
+						</div>
+						
+					</div>
+					
+				</div>
+				<!-- /Lower Footer -->
+				
+			</footer>
+			<!-- /Footer -->
+			
+			<!-- Back To Top -->
+			<a href="#" id="button-to-top"><i class="icons icon-up-dir"></i></a>
+
+
+	<!-- JavaScript -->
+		
+		<!-- Bootstrap -->
+		<script type="text/javascript" src="${contextPath}site/${site.sourcepath}/resources/js/bootstrap.min.js"></script>
+		
+		<!-- Modernizr -->
+		<script type="text/javascript" src="${contextPath}site/${site.sourcepath}/resources/js/modernizr.js"></script>
+		
+		<!-- Sliders/Carousels -->
+		<script type="text/javascript" src="${contextPath}site/${site.sourcepath}/resources/js/jquery.flexslider-min.js"></script>
+		<script type="text/javascript" src="${contextPath}site/${site.sourcepath}/resources/js/owl.carousel.min.js"></script>
+		
+		<!-- Revolution Slider  -->
+		<script type="text/javascript" src="${contextPath}site/${site.sourcepath}/resources/js/revolution-slider/js/jquery.themepunch.plugins.min.js"></script>
+		<script type="text/javascript" src="${contextPath}site/${site.sourcepath}/resources/js/revolution-slider/js/jquery.themepunch.revolution.min.js"></script>
+		
+		<!-- Calendar -->
+		<script type="text/javascript" src="${contextPath}site/${site.sourcepath}/resources/js/responsive-calendar.min.js"></script>
+		
+		<!-- Raty -->
+		<script type="text/javascript" src="${contextPath}site/${site.sourcepath}/resources/js/jquery.raty.min.js"></script>
+		
+		<!-- Chosen -->
+		<script type="text/javascript" src="${contextPath}site/${site.sourcepath}/resources/js/chosen.jquery.min.js"></script>
+		
+		<!-- jFlickrFeed -->
+		<script type="text/javascript" src="${contextPath}site/${site.sourcepath}/resources/js/jflickrfeed.min.js"></script>
+		
+		<!-- InstaFeed -->
+		<script type="text/javascript" src="${contextPath}site/${site.sourcepath}/resources/js/instafeed.min.js"></script>
+		
+		<!-- Twitter -->
+		<script type="text/javascript" src="${contextPath}site/${site.sourcepath}/resources/php/twitter/jquery.tweet.js"></script>
+		
+		<!-- MixItUp -->
+		<script type="text/javascript" src="${contextPath}site/${site.sourcepath}/resources/js/jquery.mixitup.js"></script>
+		
+		<!-- JackBox -->
+		<script type="text/javascript" src="${contextPath}site/${site.sourcepath}/resources/jackbox/js/jackbox-packed.min.js"></script>
+		
+		<!-- CloudZoom -->
+		<script type="text/javascript" src="${contextPath}site/${site.sourcepath}/resources/js/zoomsl-3.0.min.js"></script>
+		
+		<!-- Main Script -->
+		<script type="text/javascript" src="${contextPath}site/${site.sourcepath}/resources/js/script.js"></script>
+		
+		<!--[if lt IE 9]>
+			<script type="text/javascript" src="js/jquery.placeholder.js"></script>
+			<script type="text/javascript" src="js/script_ie.js"></script>
+		<![endif]-->

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<links xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <link>
+    <id>578d196f-6738-4254-8a2f-7e315862198a</id>
+    <name>友情链接</name>
+    <templet>f5c6c581-9a24-43d2-a9ac-864a091cc96b</templet>
+    <pagemark>yqlj</pagemark>
+    <isok>1</isok>
+    <type>3</type>
+  </link>
+  <link>
+    <id>77884fdd-d496-4b4c-95a3-85b89ddc5958</id>
+    <name>首页切换图</name>
+    <templet>f5c6c581-9a24-43d2-a9ac-864a091cc96b</templet>
+    <pagemark>index</pagemark>
+    <isok>1</isok>
+    <type>2</type>
+  </link>
+</links>

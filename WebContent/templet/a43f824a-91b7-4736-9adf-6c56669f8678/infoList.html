@@ -1,0 +1,75 @@
+						
+			
+<!-- Container -->
+	<div class="container">
+			
+	<#include "inc/header.html"/>		
+	
+			
+		<section id="content">	
+			
+
+		<#include "inc/location.html"/>
+			
+			
+			<!-- Section -->
+			<section class="section full-width-bg gray-bg">
+				
+				<div class="row">
+				
+					<div class="col-lg-9 col-md-9 col-sm-8 col-lg-push-3 col-md-push-3 col-sm-push-4">
+				
+					<@infoPage siteid="${site.id}" channelid="${currChannel.id}" num="5" page="${page}"
+					pagenum="${pagenum!0}" titleLen="38" dateFormat="yyyy-MM-dd"; infoList,pager>
+					
+						<#list infoList as info>
+						
+	
+									<!-- Testimonial -->
+							<div class="testimonial animate-onscroll">
+								
+								<div class="testimonial-content">
+									<img src="${contextPath}site/${site.sourcepath}/resources/img/wiecc/file-icon.png" alt="" width="20" height="20">
+									<a target='_blank' href="${info.pageurl}" title='${info.title}'>
+										<@html code='${info.title!""}' length='300';value>
+										${value}
+										</@html>
+              					 </a>
+								</div>
+								
+								<!-- <div class="testimonial-author">
+									<img src="${contextPath}site/${site.sourcepath}/resources/img/wiecc/file-icon.png" alt="">
+									<div class="author-meta">
+										<span class="name">${info.showtitle}</span>
+									</div>
+								</div> -->
+								
+							</div>
+							<!-- /Testimonial -->						
+							<div class="divider animate-onscroll"></div>
+									
+							
+							</#list>
+							
+							
+						<center> <div class="page" id="case_page"> ${pager.pageStr}</div></center>	
+				
+					</@infoPage>	
+					</div>
+						
+						
+				<#include "inc/left.html"/>							
+					
+				
+				</div>
+				
+			</section>
+			<!-- /Section -->
+		
+		</section>
+
+<#include "inc/footer.html"/>
+</div>
+<!-- /Container -->	
+	
+		

@@ -1,0 +1,887 @@
+<div class="container">
+<!DOCTYPE html>
+<html>
+<head>
+		<!-- Meta Tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="武汉市工程咨询部(武汉国际工程投资咨询公司)是为适应武汉改革开放和现代化经济建设发展要求,在全国率先成立的(武汉市人民政府批准于1986年7月成立)综合性工程咨询机构之一,主要为各级政府和企业对建设项目的投资决策与实施提供咨询服务。我部是中国第一批获得国家计委颁发的综合甲级工程咨询资格证书的单位,是国际咨询工程师联合会(FIDIC)成员协会会员和中国工程咨询协会常务理事单位,是湖北省工程咨询协会副会长单位,也是武汉市唯一的一家工程咨询综合甲级资质单位,并取得了中国质量认证中心颁发的ISO9001:2000质量管理体系认证证书">
+		<meta name="keywords" content="武汉工程咨询部、武汉市国际工程投资咨询公司" />
+		
+		<!-- Title -->
+		<title>武汉市工程咨询部、武汉市国际工程投资咨询公司</title>
+	
+		<!-- Favicon -->
+		<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+		
+		<!-- Stylesheets -->
+		<link href="/site/wiecc/resources/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+		<link href="/site/wiecc/resources/css/fontello.css" rel="stylesheet" type="text/css">
+		<link href="/site/wiecc/resources/css/flexslider.css" rel="stylesheet" type="text/css">
+		<link href="/site/wiecc/resources/js/revolution-slider/css/settings.css" rel="stylesheet" type="text/css" media="screen" />
+		<link href="/site/wiecc/resources/css/owl.carousel.css" rel="stylesheet" type="text/css">
+		<link href="/site/wiecc/resources/css/responsive-calendar.css" rel="stylesheet" type="text/css">
+		<link href="/site/wiecc/resources/css/chosen.css" rel="stylesheet" type="text/css">
+		<link href="/site/wiecc/resources/jackbox/css/jackbox.min.css" rel="stylesheet" type="text/css" />
+		<link href="/site/wiecc/resources/css/cloud-zoom.css" rel="stylesheet" type="text/css" />
+		<link href="/site/wiecc/resources/css/style.css" rel="stylesheet" type="text/css">
+		<link href="/site/wiecc/resources/css/wiecc.css" rel="stylesheet" type="text/css">
+
+		<!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+			<link href="css/jackbox-ie8.css" rel="stylesheet" type="text/css" />
+			<link rel="stylesheet" href="css/ie.css">
+        <![endif]-->
+		
+		<!--[if gt IE 8]>
+			<link href="css/jackbox-ie9.css" rel="stylesheet" type="text/css" />
+		<![endif]-->
+		
+		<!--[if IE 7]>
+			<link rel="stylesheet" href="css/fontello-ie7.css">
+		<![endif]-->
+		
+		<style type="text/css">
+			.no-fouc {display:none;}
+	  	</style>
+		
+		<!-- jQuery -->
+		<script src="/site/wiecc/resources/js/jquery-1.11.0.min.js"></script>
+		<script src="js/jquery-ui-1.10.4.min.js"></script>
+		
+		<!-- Preloader -->
+		<script src="/site/wiecc/resources/js/jquery.queryloader2.min.js"></script>
+		
+		<script type="text/javascript">
+		$('html').addClass('no-fouc');
+		
+		$(document).ready(function(){
+			
+			$('html').show();
+			
+			var window_w = $(window).width();
+			var window_h = $(window).height();
+			var window_s = $(window).scrollTop();
+			
+			$("body").queryLoader2({
+				backgroundColor: '#f2f4f9',
+				barColor: '#63b2f5',
+				barHeight: 4,
+				percentage:false,
+				deepSearch:true,
+				minimumTime:1000,
+				onComplete: function(){
+					
+					$('.animate-onscroll').filter(function(index){
+					
+						return this.offsetTop < (window_s + window_h);
+						
+					}).each(function(index, value){
+						
+						var el = $(this);
+						var el_y = $(this).offset().top;
+						
+						if((window_s) > el_y){
+							$(el).addClass('animated fadeInDown').removeClass('animate-onscroll');
+							setTimeout(function(){
+								$(el).css('opacity','1').removeClass('animated fadeInDown');
+							},2000);
+						}
+						
+					});
+					
+				}
+			});
+			
+		});
+		</script>
+</head>
+<body>
+
+	<!-- Header -->
+			<header id="header" class="animate-onscroll">				
+				<!-- Main Header -->
+				<div id="main-header">
+					
+					<div class="container">
+					
+					<div class="row">
+						
+						<!-- Logo -->
+						<div id="logo" >
+							
+							<a href="index.html"><img src="/site/wiecc/resources/img/wiecc/logo.jpg" alt="Logo" 
+							width="600px" ></a>
+							
+						</div>
+						<!-- /Logo -->
+						
+						<!-- Main Quote -->
+						<!--  
+						<div class="col-lg-5 col-md-4 col-sm-4">
+							
+							<blockquote>武汉工程咨询部、武汉市国际工程投资咨询公司</blockquote>
+							
+						</div>
+						-->
+						<!-- /Main Quote -->
+						
+					</div>
+					
+					</div>
+					
+				</div>
+				<!-- /Main Header -->
+				
+				<!-- Lower Header -->
+				<div id="lower-header">
+					
+					<div class="container">
+					
+					<div id="menu-button">
+						<div>
+						<span></span>
+						<span></span>
+						<span></span>
+						</div>
+						<span>Menu</span>
+					</div>
+					
+					<ul id="navigation">
+						
+						<!-- Home -->
+						<li class="home-button current-menu-item">
+							<a href="/site/wiecc/index.html"><i class="icons icon-home"></i></a>
+							
+						</li>
+						<!-- /Home -->
+						
+						<!-- Pages -->
+						
+					<li   >
+					    <span>公司简介</span>
+					    <UL>
+					        <LI><A href="/site/wiecc/gsjjgsqk/index.html">公司情况</A> </LI>
+					        <LI><A href="/site/wiecc/gsjjldbz/index.html">领导班子</A> </LI>
+					    </UL>
+					 </li>
+					<li   >
+					    <span>公司业务</span>
+					    <UL>
+					        <LI><A href="/site/wiecc/gsywppp/index.html">PPP项目咨询</A> </LI>
+					    </UL>
+					 </li>
+					<li   >
+					    <span>公司实力</span>
+					    <UL>
+					    </UL>
+					 </li>
+					<li   >
+					    <span>主要业绩</span>
+					    <UL>
+					        <LI><A href="/site/wiecc/pgzx/index.html">评估咨询</A> </LI>
+					    </UL>
+					 </li>
+					<li   >
+					    <span>政策法规</span>
+					    <UL>
+					        <LI><A href="/site/wiecc/zcfgc1/index.html">政策法规</A> </LI>
+					    </UL>
+					 </li>
+					<li   >
+					    <span>招投标</span>
+					    <UL>
+					    </UL>
+					 </li>
+					<li   class="donate-button "    >
+					    <span>企业文化</span>
+					    <UL>
+					    </UL>
+					 </li>
+					<li   class="donate-button "    >
+					    <span>联系我们</span>
+					    <UL>
+					    </UL>
+					 </li>
+						
+						<!-- <li >
+						
+							<span>公司简介</span>
+							
+							<ul>
+							
+								<li><a href="about.html">公司情况</a></li>
+								<li><a href="team.html">领导班子</a></li>
+								<li><a href="issues.html">领导致辞</a></li>
+								<li><a href="testimonials.html">组织架构</a></li>
+								
+							</ul>
+							
+						</li>
+						/Pages
+						
+						公司业务
+						<li >
+							<span>公司业务</span>
+							<ul>
+								<li><a href="event-calendar.html">PPP项目咨询</a></li>
+							</ul>
+						</li>
+						/公司业务
+						
+						公司实力
+						<li >
+							<span>公司实力</span>
+							<ul>
+								<li><a href="media-sortable-1column-sidebar.html">资质认证</a></li>
+								<li><a href="media-sortable-1column-sidebar.html">人力资源</a></li>
+								<li><a href="media-sortable-1column-sidebar.html">专家资源</a></li>
+								<li><a href="media-sortable-1column-sidebar.html">获奖情况</a></li>
+								<li><a href="media-sortable-1column-sidebar.html">质量体系</a></li>
+							</ul>
+							
+						</li>
+						/公司实力
+						
+						主要业绩
+						<li >
+							<span>主要业绩</span>
+							<ul>
+								<li><a href="features-typography.html">评估咨询</a></li>
+								<li><a href="features-shortcodes.html">编制报告</a></li>
+								<li><a href="features-shortcodes.html">专题研究</a></li>
+								<li><a href="features-shortcodes.html">造价咨询</a></li>
+								<li><a href="features-shortcodes.html">节能评估</a></li>
+								<li><a href="features-shortcodes.html">招标代理</a></li>
+								<li><a href="features-shortcodes.html">项目管理</a></li>
+								<li><a href="features-shortcodes.html">工程监理</a></li>
+								<li><a href="features-shortcodes.html">PPP咨询服务</a></li>
+							</ul>
+							
+						</li>
+						/主要业绩
+						
+						
+						政策法规
+						<li >
+							<a href="get-involved.html">政策法规</a>
+						</li>
+						/政策法规
+						
+						招投标
+							<li >
+						
+							<span>招投标</span>
+							
+							<ul>
+								<li><a href="features-typography.html">招标公告</a></li>
+								<li><a href="features-shortcodes.html">标书下载</a></li>
+								<li><a href="features-shortcodes.html">中标公告</a></li>
+							</ul>
+							
+						</li>
+						/招投标
+						
+						
+						
+						企业文化
+						<li class="donate-button ">
+							<a href="#">企业文化</a>
+						</li>
+						/企业文化
+						
+							联系我们
+						<li class="donate-button ">
+							<a href="#">联系我们</a>
+						</li>
+						/联系我们
+						 -->
+					</ul>
+					
+					</div>
+					
+				</div>
+				<!-- /Lower Header -->
+				
+				
+			</header>
+			<!-- /Header -->
+
+</body>
+</html>
+		<section id="content">
+			
+			<!-- Section -->
+			<section class="section full-width-bg">
+				
+				<div class="row">
+				
+					<div class="col-lg-12 col-md-12 col-sm-12">
+						
+						<!-- Revolution Slider -->
+						<div class="tp-banner-container main-revolution">
+						
+							<span class="Apple-tab-span"></span>
+ 
+							<div class="tp-banner">
+								
+								<ul>
+									<li data-transition="papercut" data-slotamount="7">
+										<img src="resources/img/wiecc/858-1.jpg" alt="">
+										<div class="tp-caption"  data-x="100" data-y="115" data-speed="700" data-start="1000" data-easing="easeOutBack"><h2>全方位<br>多层次<br>专业化</h2></div>
+										<div class="tp-caption"  data-x="100" data-y="310" data-speed="500" data-start="1200" data-easing="easeOutBack"><a href="#" class="button big">更多详情</a></div>
+									</li>
+									
+									<li data-transition="papercut" data-slotamount="7">
+										<img src="resources/img/wiecc/858-2.jpg" alt="">
+										<div class="tp-caption align-center" data-x="center" data-y="135" data-speed="700" data-start="1000" data-easing="easeOutBack"><h4 class="great-vibes">做工程咨询的先锋，引领行业发展方向</h4></div>
+										<div class="tp-caption align-center" data-x="center" data-y="220" data-speed="500" data-start="1200" data-easing="easeOutBack"><h2>一起建设我们的未来</h2></div>
+										<div class="tp-caption align-center" data-x="center" data-y="300" data-speed="300" data-start="1400"><a href="#" class="button big button-arrow">更多详情</a></div>
+									</li>
+									
+									<li data-transition="papercut" data-slotamount="7">
+										<img src="resources/img/wiecc/858-3.jpg" alt="">
+										<div class="tp-caption align-right" data-x="right" data-hoffset="-100" data-y="150" data-speed="700" data-start="1000" data-easing="easeOutBack"><h2>30年行业经验</h2></div>
+										<div class="tp-caption align-right" data-x="right" data-hoffset="-100" data-y="225" data-speed="500" data-start="1200" data-easing="easeOutBack"><p>抚今追昔，峥嵘岁月,<br> 风帆正举，稳步前进, 蒸蒸日上，声震天下. </p></div>
+										<div class="tp-caption align-right" data-x="right" data-hoffset="-100" data-y="305" data-speed="300" data-start="1400"><a href="#" class="button big button-arrow">更多详情</a></div>
+									</li>
+								</ul>
+								
+							</div>
+						 
+						</div>
+						<!-- /Revolution Slider -->
+						
+					</div>
+					
+					
+					<div class="col-lg-12 col-md-12 col-sm-12">
+						
+						<div class="banners-inline">
+						
+							<div class="banner-wrapper">
+							<a class="banner animate-onscroll" href="#">
+								<i class="icons icon-calendar"></i>
+								<h4>公司业务</h4>
+								<p>Lorem ipsum dolor sit amet</p>
+							</a>
+						</div>
+						
+						<div class="banner-wrapper">
+							<a class="banner animate-onscroll" href="#">
+								<i class="icons icon-fire"></i>
+								<h4>招投标</h4>
+								<p>Nemo enim ipsam</p>
+							</a>
+						</div>
+						
+						<div class="banner-wrapper" >
+							<a class="banner animate-onscroll" href="#">
+								<i class="icons icon-user"></i>
+								<h4>30周年主题</h4>
+								<p>Pellentesque sed dolor</p>
+							</a>
+						</div>
+						
+						<div class="banner-wrapper">
+							<a class="banner animate-onscroll" href="#">
+								<i class="icons icon-user"></i>
+								<h4>党群工作</h4>
+								<p>Pellentesque sed dolor</p>
+							</a>
+						</div>
+						
+										
+						</div>
+						
+					</div>
+				
+				</div>
+				
+			</section>
+			<!-- /Section -->
+			
+			
+			
+			
+			<!-- Section -->
+			<section class="section full-width-bg gray-bg">
+				
+				<div class="row">
+				
+					<div class="col-lg-9 col-md-9 col-sm-8">
+					
+					
+						<a href="/site/wiecc/xwdt/index.html">
+							<h3 class="animate-onscroll no-margin-top">新闻动态</h3>
+						</a>
+						
+						
+						<div class="blog-post big animate-onscroll">
+							
+							<div class="post-image">
+								<a href="/site/wiecc/xwdt/info/2016/290.html"><img
+											src="/userfiles/images/admin/457-1.jpg" width="457"
+											height="308" />
+								</a>
+							</div>
+							
+							<h4 class="post-title"><a href="/site/wiecc/xwdt/info/2016/290.html"><font color='000000'>我部举行十八届五中全会精神专题报告会</font></a></h4>
+							
+							<div class="post-meta">
+								<span>by <a href="#">admin</a></span>
+								<span>October 01, 2013 11:28AM</span>
+							</div>
+							
+							<p><a href="/site/wiecc/xwdt/info/2016/290.html">
+										2015年12月15日上午，市工程咨询部组织召开了党的十八届五中全会精神专题报告会，特邀市委党校叶卫东教授为咨询部全体党员干部（含子公司）作十八届五中全会精神专题学习报告。 叶卫东教授的报告主题是《从
+							</a></p>
+							
+							<a href="/site/wiecc/xwdt/info/2016/290.html" class="button read-more-button big button-arrow">更多</a>
+							
+						</div>
+						<!-- /Blog Post -->	
+					</div>
+					
+					
+					
+					<!-- Sidebar -->
+					<div class="col-lg-3 col-md-3 col-sm-4 sidebar">
+						
+												<!-- Upcoming Events -->
+						<div class="sidebar-box white animate-onscroll">
+							<h3>最新公告</h3>
+							<ul class="upcoming-events">
+							
+								<!-- Event -->
+								<li>
+									<div class="date">
+										<span>
+											<span class="day">25</span>
+											<span class="month">DEC</span>
+										</span>
+									</div>
+									
+									<div class="event-content">
+										<h6><a href="event-post-v2.html">武汉市工程咨询部30周年节目准备</a></h6>
+										<ul class="event-meta">
+											<li><i class="icons icon-clock"></i> 4:00 pm - 6:00 pm</li>
+											<li><i class="icons icon-location"></i> 340 W 50th St.New York</li>
+										</ul>
+									</div>
+								</li>
+								<!-- /Event -->
+								
+								<!-- Event -->
+								<li>
+									<div class="date">
+										<span>
+											<span class="day">5</span>
+											<span class="month">JAN</span>
+										</span>
+									</div>
+									
+									<div class="event-content">
+										<h6><a href="event-post-v2.html">武汉市工程咨询部招聘咨询工程师公告</a></h6>
+										<ul class="event-meta">
+											<li><i class="icons icon-clock"></i> 4:00 pm - 6:00 pm</li>
+											<li><i class="icons icon-location"></i> 340 W 50th St.New York</li>
+										</ul>
+									</div>
+								</li>
+								<!-- /Event -->
+								
+								<!-- Event -->
+								<li>
+									<div class="date">
+										<span>
+											<span class="day">8</span>
+											<span class="month">JAN</span>
+										</span>
+									</div>
+									
+									<div class="event-content">
+										<h6><a href="event-post-v2.html">武汉市工程咨询部招聘咨询工程师开会</a></h6>
+										<ul class="event-meta">
+											<li><i class="icons icon-clock"></i> 4:00 pm - 6:00 pm</li>
+											<li><i class="icons icon-location"></i> 340 W 50th St.New York</li>
+										</ul>
+									</div>
+								</li>
+								<!-- /Event -->
+								
+							</ul>
+							<a href="#" class="button transparent button-arrow">更多</a>
+						</div>
+						<!-- /Upcoming Events -->						
+					</div>
+					<!-- /Sidebar -->
+					
+				</div>
+				
+				
+				
+				<div class="row no-margin-bottom">
+				
+					
+					<div class="col-lg-12 col-md-12 col-sm-12">
+						
+												
+						<!-- Owl Carousel -->
+						<div class="owl-carousel-container">
+							
+							<div class="owl-header">
+								
+								<h3 class="animate-onscroll">主要业绩</h3>
+								
+								<div class="carousel-arrows animate-onscroll">
+									<span class="left-arrow"><i class="icons icon-left-dir"></i></span>
+									<span class="right-arrow"><i class="icons icon-right-dir"></i></span>
+								</div>
+								
+							</div>
+							
+							<div class="owl-carousel" data-max-items="4">
+										
+								<!-- Owl Item -->
+								<div>
+									
+									<!-- Blog Post -->
+									<div class="blog-post animate-onscroll">
+										
+										<div class="post-image">
+											<img src="resources/img/wiecc/263-2.jpg" alt="">
+										</div>
+										
+										<h4 class="post-title"><a href="blog-single-sidebar.html">武汉轻轨一号线</a></h4>
+										
+										<div class="post-meta">
+											<span>by <a href="#">admin</a></span>
+											<span>October 01, 2013 11:28AM</span>
+										</div>
+										
+										<p> 武汉轻轨一号线武汉市建设的首条轨道交通线路，全长28.8公里，总投资70亿元，全线高架.</p>
+										
+										<a href="blog-single-sidebar.html" class="button read-more-button big button-arrow">更多</a>
+										
+									</div>
+									<!-- /Blog Post -->
+									
+								</div>
+								<!-- /Owl Item -->
+								
+								<!-- Owl Item -->
+								<div>
+									
+									<!-- Blog Post -->
+									<div class="blog-post animate-onscroll">
+										
+										<div class="post-image">
+											<img src="resources/img/wiecc/263-3.jpg" alt="">
+										</div>
+										
+										<h4 class="post-title"><a href="blog-single-sidebar.html">武汉辛亥博物馆项目</a></h4>
+										
+										<div class="post-meta">
+											<span>by <a href="#">admin</a></span>
+											<span>October 01, 2013 11:28AM</span>
+										</div>
+										
+										<p>辛亥革命博物馆位于武汉阅马场首义广场南端，与辛亥革命武昌起义军政府旧址红楼遥相呼应，建筑面积2.2万平方米，展厅面积6800平方米.</p>
+										
+										<a href="blog-single-sidebar.html" class="button read-more-button big button-arrow">更多</a>
+										
+									</div>
+									<!-- /Blog Post -->
+									
+								</div>
+								<!-- /Owl Item -->
+								
+								<!-- Owl Item -->
+								<div>
+									
+									<!-- Blog Post -->
+									<div class="blog-post animate-onscroll">
+										
+										<div class="post-image">
+											<img src="resources/img/wiecc/263-1.jpg" alt="">
+										</div>
+										
+										<h4 class="post-title"><a href="blog-single-sidebar.html">鹦鹉洲长江大桥项目</a></h4>
+										
+										<div class="post-meta">
+											<span>by <a href="#">admin</a></span>
+											<span>October 01, 2013 11:28AM</span>
+										</div>
+										
+										<p>武汉市鹦鹉洲长江大桥项目位于武汉长江大桥与白沙洲长江大桥之间，距武汉长江大桥约2公里处。线路起于汉阳马鹦路与鹦鹉大道相交处，向东南跨越长江，止于武昌复兴路，全长3420米。道路等级为城市快速路，设计车速60公里/小时，双向8车道，工程总投资48.7亿元.</p>
+										
+										<a href="blog-single-sidebar.html" class="button read-more-button big button-arrow">更多</a>
+										
+									</div>
+									<!-- /Blog Post -->
+									
+								</div>
+								<!-- /Owl Item -->
+								
+								<!-- Owl Item -->
+								<div>
+									
+									<!-- Blog Post -->
+									<div class="blog-post animate-onscroll">
+										
+										<div class="post-image">
+											<img src="resources/img/wiecc/263-5.jpg" alt="">
+										</div>
+										
+										<h4 class="post-title"><a href="blog-single-sidebar.html">武汉 中国光谷</a></h4>
+										
+										<div class="post-meta">
+											<span>by <a href="#">admin</a></span>
+											<span>October 01, 2013 11:28AM</span>
+										</div>
+										
+										<p>武汉·中国光谷是2001年7月6日经原国家计委（现国家发改委）正式批复建立的国家光电子产业基地，是国内最大的光纤光缆、光电器件生产基地，最大的光通信技术研发基地，最大的激光产业基地。.</p>
+										
+										<a href="blog-single-sidebar.html" class="button read-more-button big button-arrow">更多</a>
+										
+									</div>
+									<!-- /Blog Post -->
+									
+								</div>
+								<!-- /Owl Item -->
+								
+								<!-- Owl Item -->
+								<div>
+									
+									<!-- Blog Post -->
+									<div class="blog-post animate-onscroll">
+										
+										<div class="post-image">
+											<img src="resources/img/wiecc/263-4.jpg" alt="">
+										</div>
+										
+										<h4 class="post-title"><a href="blog-single-sidebar.html">神龙汽车有限公司武汉工厂</a></h4>
+										
+										<div class="post-meta">
+											<span>by <a href="#">admin</a></span>
+											<span>October 01, 2013 11:28AM</span>
+										</div>
+										
+										<p>神龙汽车有限公司武汉工厂设计纲领为年产30万辆轿车，其中一期工程占地126万平方米，投资131亿元。.</p>
+										
+										<a href="blog-single-sidebar.html" class="button read-more-button big button-arrow">更多</a>
+										
+									</div>
+									<!-- /Blog Post -->
+									
+								</div>
+								<!-- /Owl Item -->
+								
+						
+							
+							</div>
+						
+						</div>
+						<!-- /Owl Carousel -->						
+					</div>
+				
+				</div>
+				
+				<div class="row">
+					<div class="col-lg-9 col-md-9 col-sm-8">
+												<!-- Banner Rotator -->
+						<div class="banner-rotator animate-onscroll">
+							
+							<div class="flexslider banner-rotator-flexslider">
+								
+								<ul class="slides">
+									
+									<li id="flex_rotator_1">
+										<div class="banner-rotator-content">
+											<h5>获奖项目</h5>
+											<h5>百度云计算（阳泉）中心项目申请报告获北京市优秀工程咨询成果二等奖</h5>
+											<a href="#" class="button big button-arrow">详情</a>
+										</div>
+									</li>
+									
+									<li id="flex_rotator_2">
+										<div class="banner-rotator-content">
+											<h5>获奖项目</h5>
+											<h5>武汉市朝阳金盏金融服务园区三年发展方案</h5>
+											<a href="#" class="button big button-arrow">详情</a>
+										</div>
+									</li>
+									
+									<li id="flex_rotator_3">
+										<div class="banner-rotator-content">
+											<h5>获奖项目</h5>
+											<h5>《武汉市高技术产业战略性新兴产业发展规划及重大项目储备》</h5>
+											<a href="#" class="button big button-arrow">详情</a>
+										</div>
+									</li>
+									
+								</ul>
+								
+							</div>
+						
+						</div>
+						<!-- /Banner Rotator -->						
+					</div>
+					
+					
+					
+					<!-- Sidebar -->
+					<div class="col-lg-3 col-md-3 col-sm-4 sidebar">
+						
+												<!-- Image Banner -->
+						<div class="sidebar-box image-banner animate-onscroll">
+							<a href="issues.html">
+								<img src="resources/img/wiecc/263-187-1.jpg" alt="">
+								<h3>专题报道</h3>
+								<span class="button transparent button-arrow">更多</span>
+							</a>
+						</div>
+						<!-- /Image Banner -->						
+					</div>
+					<!-- /Sidebar -->
+					
+				</div>
+				
+				
+				
+			</section>
+			<!-- /Section -->
+		
+		</section>
+
+	
+	<!-- Footer -->
+			<footer id="footer">
+				
+				<!-- Main Footer -->
+				<div id="main-footer">
+					
+					<div class="row">
+						
+						<div class="col-lg-3 col-md-3 col-sm-6 animate-onscroll">
+							
+							<h4>公司介绍</h4>
+							
+							<p>武汉市工程咨询部（下简称咨询部）于1986年7月经武汉市人民政府批准成立，是上世纪八十年代随着我国投资体制改革在国内率先成立的地方综合性工程咨询机构之一，主要任务是为政府和企业对建设项目的投资决策与实施提供咨询服务。</p>
+							
+						</div>
+						
+						<div class="col-lg-3 col-md-3 col-sm-6 animate-onscroll">
+							
+							<h4>友情合作</h4>
+								
+							<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 menu-container">
+								
+								<ul class="menu">
+									<li><a href="http://www.sdpc.gov.cn/">中华人民共和国国家发展和改革委员会</a></li>
+									<li><a href="http://www.hubei.gov.cn/">湖北省人民政府</a></li>
+									<li><a href="http://www.cnaec.com.cn/default.aspx">中国工程咨询协会</a></li>
+								</ul>
+							</div>							
+						</div>
+						
+						<div class="col-lg-3 col-md-3 col-sm-6 twitter-widget-area animate-onscroll">
+							<h4>关注我们</h4>
+							<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 menu-container">
+								<img alt="" src="/site/wiecc/resources/img/xs.png">
+							</div>
+						</div>
+						
+						<div class="col-lg-3 col-md-3 col-sm-6 animate-onscroll">
+							<h4>联系我们</h4>
+							<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 menu-container">
+								
+								<ul class="menu">
+									<li><a href="#">关于</a></li>
+									<li><a href="#">地址</a></li>
+									<li><a href="#">法律</a></li>
+									<li><a href="#">邮箱</a></li> 
+								</ul>
+								
+							</div>
+							
+						</div>
+						
+					</div>
+					
+				</div>
+				<!-- /Main Footer -->
+				<!-- Lower Footer -->
+				<div id="lower-footer">
+					
+					<div class="row">
+						
+						<div class="col-lg-6 col-md-6 col-sm-6 animate-onscroll">
+						
+							<p class="copyright">© 2007-2016 版权所有  武汉市工程咨询部、武汉市国际工程投资咨询公司 </p>
+							
+						</div>
+						
+					</div>
+					
+				</div>
+				<!-- /Lower Footer -->
+				
+			</footer>
+			<!-- /Footer -->
+			
+			<!-- Back To Top -->
+			<a href="#" id="button-to-top"><i class="icons icon-up-dir"></i></a>
+
+
+	<!-- JavaScript -->
+		
+		<!-- Bootstrap -->
+		<script type="text/javascript" src="/site/wiecc/resources/js/bootstrap.min.js"></script>
+		
+		<!-- Modernizr -->
+		<script type="text/javascript" src="/site/wiecc/resources/js/modernizr.js"></script>
+		
+		<!-- Sliders/Carousels -->
+		<script type="text/javascript" src="/site/wiecc/resources/js/jquery.flexslider-min.js"></script>
+		<script type="text/javascript" src="/site/wiecc/resources/js/owl.carousel.min.js"></script>
+		
+		<!-- Revolution Slider  -->
+		<script type="text/javascript" src="/site/wiecc/resources/js/revolution-slider/js/jquery.themepunch.plugins.min.js"></script>
+		<script type="text/javascript" src="/site/wiecc/resources/js/revolution-slider/js/jquery.themepunch.revolution.min.js"></script>
+		
+		<!-- Calendar -->
+		<script type="text/javascript" src="/site/wiecc/resources/js/responsive-calendar.min.js"></script>
+		
+		<!-- Raty -->
+		<script type="text/javascript" src="/site/wiecc/resources/js/jquery.raty.min.js"></script>
+		
+		<!-- Chosen -->
+		<script type="text/javascript" src="/site/wiecc/resources/js/chosen.jquery.min.js"></script>
+		
+		<!-- jFlickrFeed -->
+		<script type="text/javascript" src="/site/wiecc/resources/js/jflickrfeed.min.js"></script>
+		
+		<!-- InstaFeed -->
+		<script type="text/javascript" src="/site/wiecc/resources/js/instafeed.min.js"></script>
+		
+		<!-- Twitter -->
+		<script type="text/javascript" src="/site/wiecc/resources/php/twitter/jquery.tweet.js"></script>
+		
+		<!-- MixItUp -->
+		<script type="text/javascript" src="/site/wiecc/resources/js/jquery.mixitup.js"></script>
+		
+		<!-- JackBox -->
+		<script type="text/javascript" src="/site/wiecc/resources/jackbox/js/jackbox-packed.min.js"></script>
+		
+		<!-- CloudZoom -->
+		<script type="text/javascript" src="/site/wiecc/resources/js/zoomsl-3.0.min.js"></script>
+		
+		<!-- Main Script -->
+		<script type="text/javascript" src="/site/wiecc/resources/js/script.js"></script>
+		
+		<!--[if lt IE 9]>
+			<script type="text/javascript" src="js/jquery.placeholder.js"></script>
+			<script type="text/javascript" src="js/script_ie.js"></script>
+		<![endif]--></div>
+<!-- /Container -->	

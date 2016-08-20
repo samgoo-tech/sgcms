@@ -1,0 +1,191 @@
+						
+			
+<!-- Container -->
+	<div class="container">
+			
+	<#include "inc/header.html"/>		
+	
+			
+		<section id="content">	
+			
+
+		<#include "inc/location.html"/>
+			
+			
+			<!-- Section -->
+			<section class="section full-width-bg gray-bg">
+				
+				<div class="row">
+				
+						<div class="col-lg-9 col-md-9 col-sm-8 col-lg-push-3 col-md-push-3 col-sm-push-4">
+						
+										
+						<h3>请您提出宝贵意见,我们将及时回复您</h3>
+						
+						<!-- <form id="contact-form" action="/guestbook_save.do" method="POST">
+						
+						
+							
+							<div class="inline-inputs">
+																
+								<div class="col-lg-6 col-md-6 col-sm-12">
+									<label>您的姓名*</label>
+									<input type="text" name="guestbook.name"> 	
+								</div>
+								
+								<div class="col-lg-6 col-md-6 col-sm-12">
+									<label>您的电话*</label>
+									<input type="text" name="guestbook.tel"> 	
+								</div>
+								
+								<div class="col-lg-6 col-md-6 col-sm-12">
+									<label>您的QQ</label>
+									<input type="text" name="guestbook.qq">		
+								</div>
+								
+								<div class="col-lg-6 col-md-6 col-sm-12">
+									<label>您的邮箱*</label>
+									<input type="text" name="guestbook.email">								
+								</div>
+								
+								<div class="col-lg-5 col-md-5 col-sm-12">
+									<label>留言主题</label>
+									<input type="text" name="guestbook.title"> 
+								</div>
+								
+								
+								<div class="col-lg-12 col-md-12 col-sm-12">
+									<label>留言内容</label>
+									<textarea rows="10" name="guestbook.content"></textarea>
+								</div>
+								
+								
+								<div class="col-lg-5 col-md-5 col-sm-12">
+									<label>验证码</label>
+									<input type="text" name="validatecode"> 
+								</div>
+								
+								
+								<div class="col-lg-5 col-md-5 col-sm-12" style="float: none">
+									<input type="button" value="提交" id="b01"> 
+									<input type="reset" value="重置">
+								</div>
+								
+								
+							</div>
+							
+							  
+							
+							
+						</form> -->
+						
+						<form id="contact-form" action="/guestbook_ajaxsave.do" method="POST">
+						
+							<input type="hidden" name="siteid" value="${site.id}">
+							
+							<input type="hidden" name="templetPath" value="guestbook.html">
+								
+							<div class="inline-inputs">
+								
+								<div class="col-lg-6 col-md-6 col-sm-12">
+									<label>您的姓名*</label>
+									<input type="text" name="guestbook.name">								
+								</div>
+								
+								<div class="col-lg-6 col-md-6 col-sm-12">
+									<label>您的电话*</label>
+									<input type="text" name="guestbook.tel"> 	
+								</div>
+								
+								<div class="col-lg-6 col-md-6 col-sm-12">
+									<label>您的QQ*</label>
+									<input type="text" name="guestbook.qq"> 	
+								</div>
+								
+								<div class="col-lg-6 col-md-6 col-sm-12">
+									<label>邮箱</label>
+									<input type="text" name="guestbook.email">		
+								</div>
+								
+								
+								<div class="col-lg-5 col-md-5 col-sm-12">
+									<label>主题</label>
+									<input type="text" name="guestbook.title"> 
+								</div>
+								
+								<div class="col-lg-12 col-md-12 col-sm-12">
+									<label>留言内容</label>
+									<textarea rows="10" name="guestbook.content"></textarea>
+								</div>
+								
+							</div>
+							
+							<div class="col-lg-5 col-md-5 col-sm-12" style="float: none">
+								<input type="button" value="提交" id="btn"> 
+								<input type="reset" value="重置">
+							</div>
+							
+						</form>
+						
+						
+					</div>
+						
+						
+				<#include "inc/left.html"/>							
+					
+				
+				</div>
+				
+			</section>
+			<!-- /Section -->
+		
+		</section>
+
+<#include "inc/footer.html"/>
+</div>
+
+<!-- /Container -->	
+
+<script type="text/javascript">
+
+
+$(document).ready(function(){
+	
+	  $("#btn").click(function(){
+		  
+		  var formParam = $("#contact-form").serialize();//序列化表格内容为字符串  
+		  
+		  var name  = $("#contact-form").find("input[name='guestbook.name']").val();
+		  
+		  
+		  	 $.ajax({  
+			       type:'post',      
+			       url:'/guestbook_ajaxsave.do',  
+			       data:formParam,  
+			       cache:false,  
+			       dataType:'text',  
+			       success:function(data){ 
+			    	   
+			    	   data = jQuery.parseJSON(data);
+			    	   		    	   
+			    	   if(data.success){
+			    		   
+			    		   layer.alert('感谢您的留言，我们会尽快回复并联系您！')
+			    			$('#contact-form')[0].reset();	   
+			    		   
+			    	   }
+			       }  
+			  }); 
+	});
+	  
+	  
+	  
+	  
+	  
+	   
+});
+	
+	
+</script>
+	
+		
