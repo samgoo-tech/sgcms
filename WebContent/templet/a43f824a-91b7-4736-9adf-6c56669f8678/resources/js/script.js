@@ -356,7 +356,8 @@ $(document).ready(function(){
 				itemsDesktopSmall : [1170,max_items],
 				itemsTablet: [991,tablet_items],
 				itemsMobile: [767,mobile_items],
-				slideSpeed:400
+				slideSpeed:200,
+				autoPlay: true
 			});
 		
 			

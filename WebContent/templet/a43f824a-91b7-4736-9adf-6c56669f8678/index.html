@@ -21,17 +21,17 @@
 									<li data-transition="papercut" data-slotamount="7">
 										<img src="${contextPath}site/${site.sourcepath}/resources/img/wiecc/858-3.jpg" alt="">
 										<div class="tp-caption align-right" data-x="right" data-hoffset="-100" data-y="150" data-speed="700" data-start="1000" data-easing="easeOutBack"><h2></h2></div>
-										<div class="tp-caption align-right" data-x="right" data-hoffset="-100" data-y="225" data-speed="500" data-start="1200" data-easing="easeOutBack"><h4 class="great-vibes">服务投资决策  担纲社会重任</h4></div>
+										<div class="tp-caption align-right" data-x="right" data-hoffset="-90" data-y="385" data-speed="500" data-start="1200" data-easing="easeOutBack"><h2 class="great-vibes">服务投资决策  担纲社会重任</h2></div>
 									</li>
 									
 									<li data-transition="papercut" data-slotamount="7">
 										<img src="${contextPath}site/${site.sourcepath}/resources/img/wiecc/858-1.jpg" alt="">
-										<div class="tp-caption"  data-x="100" data-y="115" data-speed="700" data-start="1000" data-easing="easeOutBack"><h2>独立 <br>公正<br>科学<br>可靠</h2></div>
+										<div class="tp-caption align-center" data-x="right" data-hoffset="-90" data-y="385" data-speed="700" data-start="1000" data-easing="easeOutBack"><h2 class="great-vibes">独立 公正 科学  可靠</h2></div>
 									</li>
 									
 									<li data-transition="papercut" data-slotamount="7">
 										<img src="${contextPath}site/${site.sourcepath}/resources/img/wiecc/858-2.jpg" alt="">
-										<div class="tp-caption align-center" data-x="center" data-y="135" data-speed="700" data-start="1000" data-easing="easeOutBack"><h4 class="great-vibes">做工程咨询的先锋，引领行业发展方向</h4></div>
+										<div class="tp-caption align-center" data-x="right" data-hoffset="-90" data-y="385" data-speed="700" data-start="1200" data-easing="easeOutBack"><h2 class="great-vibes">做工程咨询的先锋，引领行业发展方向</h2></div>
 										<div class="tp-caption align-center" data-x="center" data-y="220" data-speed="500" data-start="1200" data-easing="easeOutBack"><h2></h2></div>
 									</li>
 									
@@ -74,8 +74,8 @@
 			
 			<!-- Section -->
 			<section class="section full-width-bg gray-bg">
-				
-				<div class="row">
+				<!-- 新闻动态，信息公告 -->
+				<div class="row no-margin-bottom">
 				
 					<div class="col-lg-9 col-md-9 col-sm-8">
 					
@@ -89,10 +89,10 @@
 						
 						<ul class="upcoming-events">
 						
-							<@infoList siteid="${site.id}" channelPagemark="xwdt" num="6" titleLen="23" ; info,index >
-							<!-- Event -->
 							
 							<div class="blog-post big animate-onscroll">
+							<@infoList siteid="${site.id}" channelPagemark="xwdt" num="6" titleLen="23" ; info,index >
+							
 							
 							<#if index==0>
 							
@@ -105,7 +105,7 @@
 							 </#if> 
 						
 							
-							<li style="border-bottom: 1px solid #eee;    display: table">
+							<li style="border-bottom: 1px solid #eee;    display: table;padding-bottom: 8px;">
 							
 								<div class="event-content">
 									<h6><a href="${info.pageurl}">${info.showtitle}</a></h6>
@@ -117,60 +117,32 @@
 							</li>
 							
 							
-							<!-- /Event -->
 							</@infoList>
+							
 							</div>	
 							
 						</ul>
 						
-						
-						<!-- <@infoList siteid="${site.id}" channelPagemark="xwdt" num="1" titleLen="23" ; info,index >
-						<div class="blog-post big animate-onscroll">
 							
-							<div class="post-image">
-								<a href="${info.pageurl}"><img
-											src="${contextPath}${(info.img!"")?replace("/", "" , "f")}" width="457"
-											height="308" />
-								</a>
-							</div>
-							
-							<h4 class="post-title"><a href="${info.pageurl}">${info.showtitle}</a></h4>
-							
-							<div class="post-meta">
-								<span> <a href="#">${info.author}</a></span>
-								<span>${info.addtimeStr}</span>
-							</div>
-							
-							<p><a href="${info.pageurl}">
-										<@html code='${info.description!""}' length='100';value>
-										${value}
-										</@html>
-							</a></p>
-							
-							<a href="${info.pageurl}" class="button read-more-button big button-arrow">更多</a>
-							
-						</div>
-						/Blog Post	
-						</@infoList>		 -->			
 					</div>
 					
 					
+					 <div class="col-lg-3 col-md-3 col-sm-8">
 					
-					<!-- Sidebar -->
-					<div class="col-lg-3 col-md-3 col-sm-8 ">
+						<@channel siteid="${site.id}" pagemark="zxgg" ;channel>
+						<a href="${channel.pageurl}">
+							<h3 class="animate-onscroll no-margin-top">${channel.name}</h3>
+						</a>
+						</@channel>
 						
-						<!-- Upcoming Events -->
 						
-							<@channel siteid="${site.id}" pagemark="zxgg" ;channel>
-							<a href="${channel.pageurl}">
-								<h3 class="animate-onscroll no-margin-top">${channel.name}</h3>
-							</a>
-							</@channel>
-							<ul class="upcoming-events">
+						<ul class="upcoming-events">
+						
+							<div class="blog-post big animate-onscroll">
 							
-								<@infoList siteid="${site.id}" channelPagemark="zxgg" num="6" titleLen="23" ; info,index >
-								<!-- Event -->
-								<li>
+							<@infoList siteid="${site.id}" channelPagemark="zxgg" num="6" titleLen="23" ; info,index >
+									
+								<li style="border-bottom: 1px solid #eee;    display: table;padding-bottom: 8px;">
 								
 									<div class="event-content">
 										<h6><a href="${info.pageurl}">${info.showtitle}</a></h6>
@@ -180,19 +152,18 @@
 										</ul>
 									</div>
 								</li>
-								<!-- /Event -->
-								</@infoList>	
-								
-							</ul>
-							<!-- <a href="#" class="button transparent button-arrow">更多</a> -->
+							</@infoList>
+							
+							</div>	
+							
+						</ul>
 						
-						<!-- /Upcoming Events -->						
-					</div>
-					<!-- /Sidebar -->
+					</div> 
+					
 					
 				</div>
 				
-				
+				<!-- 业绩展示 -->
 				
 				<div class="row no-margin-bottom">
 				
@@ -204,7 +175,6 @@
 						<div class="owl-carousel-container">
 							
 							<div class="owl-header">
-							
 							
 								<@channel siteid="${site.id}" pagemark="zyyj" ;channel>
 								<a href="${channel.pageurl}">
@@ -241,7 +211,7 @@
 										
 										<h4 class="post-title">${info.showtitle}</h4>
 										
-										<div class="post-meta">
+										<!-- <div class="post-meta">
 											<span>by <a href="#">admin</a></span>
 											<span>${info.addtimeStr}</span>
 										</div>
@@ -250,7 +220,7 @@
 												<@html code='${info.description!""}' length='100';value>
 												${value}
 												</@html>
-									   </a></p>
+									   </a></p> -->
 										
 										<a href="${info.pageurl}" class="button read-more-button big button-arrow">更多</a>
 										
@@ -269,8 +239,8 @@
 					</div>
 				
 				</div>
-				
-				<div class="row">
+				<!-- 获奖项目 -->
+				<div class="row no-margin-bottom">
 					<div class="col-lg-9 col-md-9 col-sm-8">
 					
 						<@channel siteid="${site.id}" pagemark="hjxm" ;channel>
@@ -289,15 +259,13 @@
 									<li id="flex_rotator_${index+1}">
 										<div class="banner-rotator-content">
 											<h5><a href="${info.pageurl}">${info.showtitle}</a></h5>
-											<h5><@html code='${info.description!""}' length='100';value>
+											<!-- <h5><@html code='${info.description!""}' length='100';value>
 												${value}
-												</@html></h5>
+												</@html></h5> -->
 											<a href="#" class="button big button-arrow">详情</a>
 										</div>
 									</li>
 								</@infoList>
-								
-							
 									
 								</ul>
 								
@@ -348,8 +316,6 @@
 				
 					
 				</div>
-				
-				
 				
 			</section>
 			<!-- /Section -->

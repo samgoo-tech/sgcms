@@ -9,7 +9,7 @@
 					   
 					<a class="banner animate-onscroll"  href="${sonChannel.pageurl}"
 						<#if currChannel.id==sonChannel.id>
-						 style="background-position:0 100%;color:#FFF;"
+						 style="background-position:0 100%;background-color: #579dd9;"
 						 </#if>>
 						 <i class="icons icon-calendar"></i>
 						<h4> ${sonChannel.name}</h4>
@@ -76,14 +76,12 @@
 						</@channel>
 											
 						<@infoList siteid="${site.id}" channelPagemark="ztbd" num="5" titleLen="23" ; info,index >	
-						<!-- Image Banner -->
 						<div class="sidebar-box image-banner animate-onscroll">
 							<a href="${info.pageurl}">
 								<img src="${contextPath}${(info.img!"")?replace("/", "" , "f")}" alt="">
 								<h3 class="animate-onscroll">专题报道</h3>
 							</a>
 						</div>
-						<!-- /Image Banner -->	
 						</@infoList>						
 									
 					</div>

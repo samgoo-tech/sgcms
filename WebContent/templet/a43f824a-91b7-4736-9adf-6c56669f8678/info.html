@@ -5,8 +5,7 @@
 			
 	<#include "inc/header.html"/>		
 	
-			
-			
+						
 		<section id="content">	
 			
 
@@ -21,9 +20,14 @@
 				
 					<div class="col-lg-9 col-md-9 col-sm-8 col-lg-push-3 col-md-push-3 col-sm-push-4">
 						
-						<h3 align="center">${currInfo.title}</h3>
+						<h3 align="center" style="border-bottom: 1px dashed #2951a2;line-height: 50px;">${currInfo.title}</h3>
+						
+						<div style="color:#939393; text-align:right; font-size:12px; padding-top:5px;padding-bottom: 30px">发布日期：${currInfo.addtimeStr}&nbsp;&nbsp;浏览次数：${currInfo.infoStartClicknum}次</div>
 						
 						${currInfo.content}
+						
+						</br>
+						</br>
 						
 						<@infoAttchs attchStr="${currInfo.attchs}";attch >
 							附件：
@@ -34,6 +38,21 @@
 							
 							</a></br>
 						</@infoAttchs>
+						
+						
+						<!-- 上一条 下一条 -->
+						
+						<div style="font-size:12px;padding-top: 50px;">
+							<@infoPreList channelPagemark="${currInfo.channelPagemark}" infoid="${currInfo.id}";info>
+							上一条&gt;&gt;:<a  href="${info.pageurl}" >${info.title}</a><br><br>
+							</@infoPreList>
+							
+							<@infoNextList channelPagemark="${currInfo.channelPagemark}"  infoid="${currInfo.id}";info>	
+							下一条&gt;&gt;:<a href="${info.pageurl}" >${info.title}</a>
+							</@infoNextList>
+						</div>
+						
+						
 						
 					</div>
 					

@@ -23,7 +23,7 @@
 					
 						
 				
-					<@infoPage siteid="${site.id}" channelid="${currChannel.id}" num="5" page="${page}"
+					<@infoPage siteid="${site.id}" channelid="${currChannel.id}" num="10" page="${page}"
 					pagenum="${pagenum!0}" titleLen="38" dateFormat="yyyy-MM-dd"; infoList,pager>
 					
 					<div class="media-items row">
@@ -68,20 +68,20 @@
 										
 									</div>
 									
-									<div class="media-description">
+									<!-- <div class="media-description">
 										
 										<p>
-													<@html code='${info.description!""}' length='100';value>
-													${value}
-													</@html>
-													</p>
+										<@html code='${info.description!""}' length='100';value>
+										${value}
+										</@html>
+										</p>
 													
-									</div>
+									</div> -->
 									
-									<div class="media-button">
+									<!-- <div class="media-button">
 										<a href="${info.pageurl}" class="button big button-arrow">更多</a>
 											
-									</div>
+									</div> -->
 								
 								</div>
 								
