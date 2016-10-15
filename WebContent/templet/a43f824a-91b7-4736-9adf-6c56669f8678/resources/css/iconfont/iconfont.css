@@ -1,0 +1,51 @@
+
+@font-face {font-family: "iconfont";
+  src: url('iconfont.eot?t=1476458437'); /* IE9*/
+  src: url('iconfont.eot?t=1476458437#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('iconfont.woff?t=1476458437') format('woff'), /* chrome, firefox */
+  url('iconfont.ttf?t=1476458437') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('iconfont.svg?t=1476458437#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+
+ [class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "iconfont";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+ 
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+ 
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+     
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+ 
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+ 
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+ 
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+
+.icon-up-dir:before { content: '\e798'; } 
+
+
+.icon-right:before { content: "\e606"; }
+.icon-left:before { content: "\e604"; }
+
+.icon-left-dir:before { content: "\e602"; }
+.icon-right-dir:before { content: "\e603"; }
+
+
