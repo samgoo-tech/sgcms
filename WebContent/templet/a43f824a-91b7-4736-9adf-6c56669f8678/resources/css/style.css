@@ -662,7 +662,7 @@ h6.shortcodes-caption{
 	color:#a8abae;
 	font-size:13px;
 	margin-left:5px;
-	content: '\e88e';
+	/* content: '\e88e'; */
 }
 
 #navigation>li>a:only-child:after,
@@ -1140,7 +1140,7 @@ h6.shortcodes-caption{
 }
 
 .tparrows.default:before{
-	font-family: "fontello";
+	font-family: "iconfont";
 	font-style: normal;
 	font-weight: normal;
 	speak: none;
@@ -1154,14 +1154,14 @@ h6.shortcodes-caption{
 	margin-left: .2em;
 	color:#fff;
 	font-size:24px;
-	content: '\e891';
+	content: '\e603';
 	position:absolute;
 	left:50%;
 	margin-left:-3px;
 }
 
 .tparrows.default.tp-leftarrow:before{
-	content: '\e890'; 
+	content: '\e602'; 
 	margin-left:-6px;
 }
 
@@ -4942,7 +4942,7 @@ a.tag:hover{
 	color:#a8abae;
 	font-size:13px;
 	margin-left:5px;
-	content: '\e891';
+	/* content: '\e891'; */
 	position:absolute;
 	left:-5px;
 	top:5px;
