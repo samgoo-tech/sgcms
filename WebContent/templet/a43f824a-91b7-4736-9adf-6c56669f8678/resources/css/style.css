@@ -132,11 +132,18 @@ h5{
 	margin:30px 0 20px;
 }
 
-h6{
+/* h6{
 	font-size:16px;
 	font-weight:700;
 	margin:30px 0 20px;
+	line-height: 1.5
+} */
+h6{
+	font-size:16px;
+	margin:30px 0 20px;
+	line-height: 1.5
 }
+
 
 p{
 	margin:10px 0;
@@ -1154,14 +1161,14 @@ h6.shortcodes-caption{
 	margin-left: .2em;
 	color:#fff;
 	font-size:24px;
-	content: '\e603';
+	content: '\e601';
 	position:absolute;
 	left:50%;
 	margin-left:-3px;
 }
 
 .tparrows.default.tp-leftarrow:before{
-	content: '\e602'; 
+	content: '\e600'; 
 	margin-left:-6px;
 }
 
@@ -1382,7 +1389,7 @@ h6.shortcodes-caption{
 	-moz-border-radius:5px; 
 }
 
-#flex_rotator_1{
+/* #flex_rotator_1{
 	background:url(../img/wiecc/900-1.jpg) center center no-repeat;
 	background-size:cover;
 	width:540px;
@@ -1398,7 +1405,7 @@ h6.shortcodes-caption{
 	background:url(../img/wiecc/900-3.jpg) center center no-repeat;
 	background-size:cover;
 }
-
+ */
 
 
 
@@ -4961,7 +4968,7 @@ a.tag:hover{
 /* Twitter */
 
 .twitter-widget-area{
-	background:url(../img/twitter-widget-bg.png) 55px center no-repeat;
+	/* background:url(../img/twitter-widget-bg.png) 55px center no-repeat; */
 }
 
 .twitter-widget ul{
@@ -5418,7 +5425,7 @@ button:after{
 a.button.button-arrow:after,
 button.button-arrow:after{
 	margin-left:5px;
-	content: '\e891';
+	content: '\e601';
 	color:#808ca4;
 	margin-right:-5px;
 }

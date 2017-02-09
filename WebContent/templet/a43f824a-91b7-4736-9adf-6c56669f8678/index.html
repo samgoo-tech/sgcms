@@ -20,8 +20,8 @@
 								<ul>
 									<li data-transition="papercut" data-slotamount="7">
 										<img src="${contextPath}site/${site.sourcepath}/resources/img/wiecc/858-3.jpg" alt="">
-										<div class="tp-caption align-right" data-x="right" data-hoffset="-100" data-y="150" data-speed="700" data-start="1000" data-easing="easeOutBack"><h2></h2></div>
-										<div class="tp-caption align-right" data-x="right" data-hoffset="-90" data-y="385" data-speed="500" data-start="1200" data-easing="easeOutBack"><h2 class="great-vibes">服务投资决策  担纲社会重任</h2></div>
+										<div class="tp-caption align-right" data-x="right" data-hoffset="-100" data-y="150" data-speed="700" data-start="0" data-easing="easeOutBack"><h2></h2></div>
+										<div class="tp-caption align-right" data-x="right" data-hoffset="-90" data-y="385" data-speed="500" data-start="800" data-easing="easeOutBack"><h2 class="great-vibes">服务投资决策  担纲社会重任</h2></div>
 									</li>
 									
 									<li data-transition="papercut" data-slotamount="7">
@@ -32,7 +32,7 @@
 									<li data-transition="papercut" data-slotamount="7">
 										<img src="${contextPath}site/${site.sourcepath}/resources/img/wiecc/858-2.jpg" alt="">
 										<div class="tp-caption align-center" data-x="right" data-hoffset="-90" data-y="385" data-speed="700" data-start="1200" data-easing="easeOutBack"><h2 class="great-vibes">做工程咨询的先锋，引领行业发展方向</h2></div>
-										<div class="tp-caption align-center" data-x="center" data-y="220" data-speed="500" data-start="1200" data-easing="easeOutBack"><h2></h2></div>
+										<div class="tp-caption align-center" data-x="center" data-y="220" data-speed="500" data-start="1400" data-easing="easeOutBack"><h2></h2></div>
 									</li>
 									
 									
@@ -127,7 +127,7 @@
 					</div>
 					
 					
-					 <div class="col-lg-3 col-md-3 col-sm-8">
+					 <div class="col-lg-3 col-md-3 col-sm-4 sidebar">
 					
 						<@channel siteid="${site.id}" pagemark="zxgg" ;channel>
 						<a href="${channel.pageurl}">
@@ -140,7 +140,7 @@
 						
 							<div class="blog-post big animate-onscroll">
 							
-							<@infoList siteid="${site.id}" dateFormat="yyyy-MM-dd" channelPagemark="zxgg" num="7" titleLen="23" ; info,index >
+							<@infoList siteid="${site.id}" dateFormat="yyyy-MM-dd" channelPagemark="zxgg" num="5" titleLen="23" ; info,index >
 									
 								<li style="border-bottom: 1px solid #eee;    display: table;padding-bottom: 8px;">
 								
@@ -262,7 +262,7 @@
 											 <h6><@html code='${info.description!""}' length='100';value>
 												${value}
 												</@html></h6>
-											<a href="#" class="button big button-arrow">详情</a>
+											<!-- <a href="#" class="button big button-arrow">详情</a> -->
 										</div>
 									</li>
 								</@infoList>
@@ -279,7 +279,7 @@
 					
 					
 					
-					<div class="col-lg-3 col-md-3 col-sm-8">
+					<div class="col-lg-3 col-md-3 col-sm-4 sidebar">
 					
 						<@channel siteid="${site.id}" pagemark="qyygfc" ;channel>
 							<a href="${channel.pageurl}">

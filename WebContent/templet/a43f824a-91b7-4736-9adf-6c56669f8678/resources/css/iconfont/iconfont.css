@@ -39,13 +39,16 @@
   /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
 }
 
-.icon-up-dir:before { content: '\e798'; } 
+.icon-up-dir:before { content: '\e604'; } 
 
 
-.icon-right:before { content: "\e606"; }
-.icon-left:before { content: "\e604"; }
+.icon-right:before { content: "\e601"; }
+.icon-left:before { content: "\e600"; }
 
-.icon-left-dir:before { content: "\e602"; }
-.icon-right-dir:before { content: "\e603"; }
+.icon-left-dir:before { content: "\e606"; }
+.icon-right-dir:before { content: "\e605"; }
+
+.icon-link:before  {content: "\e602";}
+.icon-zoom-in:before { content: '\e603'; } 
 
 

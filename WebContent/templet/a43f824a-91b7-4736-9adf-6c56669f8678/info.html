@@ -22,7 +22,10 @@
 						
 						<h3 align="center" style="border-bottom: 1px dashed #2951a2;line-height: 50px;">${currInfo.title}</h3>
 						
-						<div style="color:#939393; text-align:right; font-size:12px; padding-top:5px;padding-bottom: 30px">发布日期：${currInfo.addtimeStr}&nbsp;&nbsp;浏览次数：${currInfo.infoStartClicknum}次</div>
+						<div style="color:#939393; text-align:right; font-size:12px; padding-top:5px;padding-bottom: 30px">发布日期：${currInfo.addtimeStr}&nbsp;&nbsp;浏览次数：<@ajaxInfoClick infoid="${currInfo.id}" spanAttr="";ajaxInfoClickHtml>
+											${ajaxInfoClickHtml}
+											</@ajaxInfoClick>次
+						</div>
 						
 						${currInfo.content}
 						

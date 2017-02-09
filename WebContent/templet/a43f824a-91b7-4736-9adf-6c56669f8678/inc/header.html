@@ -4,7 +4,7 @@
 		<!-- Meta Tags -->
 		<meta charset="utf-8">
 		<meta name="viewport" content="武汉市工程咨询部(武汉国际工程投资咨询公司)是为适应武汉改革开放和现代化经济建设发展要求,在全国率先成立的(武汉市人民政府批准于1986年7月成立)综合性工程咨询机构之一,主要为各级政府和企业对建设项目的投资决策与实施提供咨询服务。我部是中国第一批获得国家计委颁发的综合甲级工程咨询资格证书的单位,是国际咨询工程师联合会(FIDIC)成员协会会员和中国工程咨询协会常务理事单位,是湖北省工程咨询协会副会长单位,也是武汉市唯一的一家工程咨询综合甲级资质单位,并取得了中国质量认证中心颁发的ISO9001:2000质量管理体系认证证书">
-		<meta name="keywords" content="武汉工程咨询部、武汉市国际工程投资咨询公司" />
+		<meta name="keywords" content="武汉工程咨询部(武汉市国际工程投资咨询公司)" />
 		
 		<!-- Title -->
 		<title>武汉市工程咨询部、武汉市国际工程投资咨询公司</title>
@@ -13,17 +13,28 @@
 		<link rel="shortcut icon" type="image/x-icon" href="${contextPath}site/${site.sourcepath}/resources/img/wiecc/favicon.ico">
 		
 		<!-- Stylesheets -->
+		
+		<!-- <link href="${contextPath}site/${site.sourcepath}/resources/css/fontello.css" rel="stylesheet" type="text/css"> -->
+		
+		
+		<!-- 
 		<link href="${contextPath}site/${site.sourcepath}/resources/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-		<link href="${contextPath}site/${site.sourcepath}/resources/css/fontello.css" rel="stylesheet" type="text/css">
 		<link href="${contextPath}site/${site.sourcepath}/resources/css/flexslider.css" rel="stylesheet" type="text/css">
-		<link href="${contextPath}site/${site.sourcepath}/resources/js/revolution-slider/css/settings.css" rel="stylesheet" type="text/css" media="screen" />
 		<link href="${contextPath}site/${site.sourcepath}/resources/css/owl.carousel.css" rel="stylesheet" type="text/css">
 		<link href="${contextPath}site/${site.sourcepath}/resources/css/responsive-calendar.css" rel="stylesheet" type="text/css">
 		<link href="${contextPath}site/${site.sourcepath}/resources/css/chosen.css" rel="stylesheet" type="text/css">
-		<link href="${contextPath}site/${site.sourcepath}/resources/jackbox/css/jackbox.min.css" rel="stylesheet" type="text/css" />
 		<link href="${contextPath}site/${site.sourcepath}/resources/css/cloud-zoom.css" rel="stylesheet" type="text/css" />
 		<link href="${contextPath}site/${site.sourcepath}/resources/css/style.css" rel="stylesheet" type="text/css">
-		<link href="${contextPath}site/${site.sourcepath}/resources/css/wiecc.css" rel="stylesheet" type="text/css">
+		<link href="${contextPath}site/${site.sourcepath}/resources/css/wiecc.css" rel="stylesheet" type="text/css"> -->
+		
+
+		<link href="${contextPath}site/${site.sourcepath}/resources/jackbox/css/jackbox.min.css" rel="stylesheet" type="text/css" />
+		<link href="${contextPath}site/${site.sourcepath}/resources/js/revolution-slider/css/settings.css" rel="stylesheet" type="text/css" media="screen" />
+		
+		<link href="${contextPath}site/${site.sourcepath}/resources/css/iconfont/iconfont.css" rel="stylesheet" type="text/css"> 
+		<link href="${contextPath}site/${site.sourcepath}/resources/dist/css/all.css" rel="stylesheet" type="text/css">
+		
+		
 
 		<!--[if lt IE 9]>
             <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -43,62 +54,16 @@
 			.no-fouc {display:none;}
 	  	</style>
 		
-		<!-- jQuery -->
 		<script src="${contextPath}site/${site.sourcepath}/resources/js/jquery-1.11.0.min.js"></script>
 		<script src="${contextPath}site/${site.sourcepath}/resources/js/jquery-ui-1.10.4.min.js"></script>
 		
-		<!-- Preloader -->
-		<script src="${contextPath}site/${site.sourcepath}/resources/js/jquery.queryloader2.min.js"></script>
-		
+		 
 		
 		<!-- layer -->
 		<script type="text/javascript" src="${contextPath}site/${site.sourcepath}/resources/js/layer/layer.js"></script>
 		<script type="text/javascript" src="${contextPath}site/${site.sourcepath}/resources/js/layer/extend/layer.ext.js"></script>
 		
 		
-		<script type="text/javascript">
-		$('html').addClass('no-fouc');
-		
-		$(document).ready(function(){
-			
-			$('html').show();
-			
-			var window_w = $(window).width();
-			var window_h = $(window).height();
-			var window_s = $(window).scrollTop();
-			
-			$("body").queryLoader2({
-				backgroundColor: '#f2f4f9',
-				barColor: '#63b2f5',
-				barHeight: 4,
-				percentage:false,
-				deepSearch:true,
-				minimumTime:100,
-				onComplete: function(){
-					
-					$('.animate-onscroll').filter(function(index){
-					
-						return this.offsetTop < (window_s + window_h);
-						
-					}).each(function(index, value){
-						
-						var el = $(this);
-						var el_y = $(this).offset().top;
-						
-						if((window_s) > el_y){
-							$(el).addClass('animated fadeInDown').removeClass('animate-onscroll');
-							setTimeout(function(){
-								$(el).css('opacity','1').removeClass('animated fadeInDown');
-							},100);
-						}
-						
-					});
-					
-				}
-			});
-			
-		});
-		</script>
 </head>
 <body>
 

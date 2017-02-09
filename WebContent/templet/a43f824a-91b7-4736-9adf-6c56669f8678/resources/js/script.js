@@ -55,7 +55,7 @@ $(document).ready(function(){
 	
 	enableTooltips(); // Tooltips
 	
-	enableContentAnimation(); // Content Animation
+	//enableContentAnimation(); // Content Animation
 	
 	enableSpecialCssEffects(); // CSS Animations
 	
@@ -110,7 +110,7 @@ $(document).ready(function(){
 	
 	enableJackBox(); // JackBox Plugin
 	
-	enableCalendar(); // Full Calendar
+	//enableCalendar(); // Full Calendar
 	
 	enableStarRating(); // Star Rating
 	
@@ -123,9 +123,9 @@ $(document).ready(function(){
 	
 	/* AJAX forms */
 	
-	enableContactForm(); // AJAX Contact Form
+	//enableContactForm(); // AJAX Contact Form
 	
-	enableNewsletterForm(); // AJAX Newsletter Form
+	//enableNewsletterForm(); // AJAX Newsletter Form
 	
 
 	
