@@ -49,12 +49,14 @@
 									
 									<div class="post-content">
 										
-										<div class="post-header">
+										<div class="post-header" >
 											<h2><a href="${info.pageurl}">${info.showtitle}</a></h2>
 											<div class="post-meta">
-												<span>by <a href="#">admin</a></span>
-												<span>October 01, 2013 11:28AM</span>
-												<span><a href="blog-single-sidebar.html#comments">25 Comments</a></span>
+												<span>更新：<a href="#">管理员</a></span>
+												<span>${info.addtimeStr}</span>
+												<span><a href="blog-single-sidebar.html#comments">浏览次数：<@ajaxInfoClick infoid="${info.id}" spanAttr="";ajaxInfoClickHtml>
+											${ajaxInfoClickHtml}
+											</@ajaxInfoClick>次</a></span>
 											</div>
 										</div>
 										
@@ -85,9 +87,9 @@
 						
 					</div>
 						
-						
-				<#include "inc/left.html"/>							
-					
+
+				<#include "inc/left.html"/>
+
 				
 				</div>
 				
