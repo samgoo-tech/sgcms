@@ -1,0 +1,91 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>武汉市工程咨询部</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" href="${contextPath}site/${site.sourcepath}/resources/m/resources/css/mui.min.css" />
+    <link rel="stylesheet" href="${contextPath}site/${site.sourcepath}/resources/m/resources/css/n_haoxq.css" />
+    <script type="text/javascript" src="${contextPath}site/${site.sourcepath}/resources/m/resources/js/jquery-2.1.0.js"></script>
+    <script type="text/javascript" src="${contextPath}site/${site.sourcepath}/resources/m/resources/js/mui.min.js"></script>
+
+    <style>
+        .border_ccc.mui-block.padding_lr img{
+            width: 350px !important;
+            height: auto !important;
+        }
+    </style>
+
+
+</head>
+
+<body class="body">
+
+
+<div class="mui-content nav_btm_pd white_bg">
+    <h4 class="mui-text-justify padding_lr fz22" style="padding-top:10px;line-height:30px">${currInfo.title}</h4>
+    <div style="width:90%; margin:0px auto;font-size:12;color:#8f8f94">发布日期：${currInfo.addtimeStr}&nbsp;&nbsp;浏览次数：<@ajaxInfoClick infoid="${currInfo.id}" spanAttr="";ajaxInfoClickHtml>
+        ${ajaxInfoClickHtml}
+    </@ajaxInfoClick>次
+    </div>
+    <hr class="hr" color="#ccc" size="1px"></hr>
+    <p class="mui-text-justify padding_lr text_indent margin_tb12">
+
+
+        <div class="border_ccc mui-block padding_lr">
+
+        <p>
+
+        ${currInfo.content}
+
+
+        </p>
+       </div>
+
+    </p>
+</div>
+
+<!--<div class="padding_lr">
+    <a href="#"><img src="resoureces/img/pic_201609071473237617.jpg" class="xiangy_img center_block"></a>
+</div>-->
+</p>
+
+<div class="jw1">
+    <ul class=" mui-table-view" >
+        <li class="mui-table-view-cell mui-media">
+            <a href=""class="">
+                <img class="mui-media-object mui-pull-left n-media-object" src="${contextPath}site/${site.sourcepath}/resources/m/resources/img/logo-h5.jpg" style="height:80px;">
+                <div class="mui-media-body fz14 color_gray40 line-ht18 n-media-body2">
+                    <h4 class="mui-ellipsis fz18 margin_none">业务单位</h4>
+                    <p class="mui-ellipsis">武汉市工程咨询部</p>
+                    <h4 class="mui-ellipsis fz12">联系方式：027-82805003</h4>
+                </div>
+            </a>
+        </li>
+    </ul>
+
+</div>
+
+</div>
+
+<nav class=" mui-bar mui-bar-tab black_bg">
+    <a href="${contextPath}site/${site.sourcepath}/m/gywz/index.html" <#if currChannel.parid=='26ea90c8-8b6b-424b-ad87-37eef0ebfef8'>  class="n-tab-item n-active"  </#if> class="n-tab-item" >
+    <img <#if currChannel.parid=='26ea90c8-8b6b-424b-ad87-37eef0ebfef8'> src="${contextPath}site/${site.sourcepath}/resources/m/resources/img/nav-1-hover.png" </#if> src="${contextPath}site/${site.sourcepath}/resources/m/resources/img/nav-1.png"  class="n-icon-doc_pinp mui-icon">
+    <span class="mui-tab-label fz15">关于我们  </span>
+    </a>
+    <a href="${contextPath}site/${site.sourcepath}/m/zyyj/index.html" <#if currChannel.parid=='0faa9fa1-e0bf-4b60-99c8-baca779033fa'>  class="n-tab-item n-active"  </#if> class="n-tab-item">
+    <img <#if currChannel.parid=='0faa9fa1-e0bf-4b60-99c8-baca779033fa'> src="${contextPath}site/${site.sourcepath}/resources/m/resources/img/nav-2-hover.png" </#if> src="${contextPath}site/${site.sourcepath}/resources/m/resources/img/nav-2.png"  class="n-icon-doc_pinp mui-icon">
+
+    <span class="mui-tab-label fz15">业绩展示</span>
+    </a>
+    <a href="${contextPath}site/${site.sourcepath}/m/news/index.html" <#if currChannel.parid=='d3931a93-4589-4c32-99a8-6a09ea2c1d3f'>  class="n-tab-item n-active"  </#if> class="n-tab-item">
+    <img <#if currChannel.parid=='d3931a93-4589-4c32-99a8-6a09ea2c1d3f'> src="${contextPath}site/${site.sourcepath}/resources/m/resources/img/nav-3-hover.png" </#if> src="${contextPath}site/${site.sourcepath}/resources/m/resources/img/nav-3.png"   class="n-icon-doc_pinp mui-icon">
+    <span class="mui-tab-label fz15">武咨动态</span>
+    </a>
+</nav>
+
+
+</body>
+</html>

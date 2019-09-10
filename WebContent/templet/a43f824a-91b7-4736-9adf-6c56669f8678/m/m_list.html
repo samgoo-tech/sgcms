@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>武汉市工程咨询部</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" href="${contextPath}site/${site.sourcepath}/resources/m/resources/css/mui.min.css" />
+    <link rel="stylesheet" href="${contextPath}site/${site.sourcepath}/resources/m/resources/css/n_haoxq.css" />
+    <script type="text/javascript" src="${contextPath}site/${site.sourcepath}/resources/m/resources/js/jquery-2.1.0.js"></script>
+    <script type="text/javascript" src="${contextPath}site/${site.sourcepath}/resources/m/resources/js/mui.min.js"></script>
+    <style>
+        .list_imgtxt {
+            position: absolute;
+            bottom:0px;
+
+
+            /*background: rgba(0,0,0,0.3);
+            width: 80%;
+            height: 18%;
+            text-align: center;*/
+        }
+        .ab{
+            position:relative;
+        }
+    </style>
+</head>
+<script>
+    window.onload = function(){
+        var sb=$(".sb").height();
+        $(".sx1 ").css("top",sb);
+    }
+</script>
+<body>
+
+<div class="mui-slider sb" id="slider">
+    <div class="mui-slider-group mui-slider-loop" style="transform: translate3d(-320px, 0px, 0px) translateZ(0px);">
+        <div class="mui-slider-item mui-slider-item-duplicate mui-slider">
+
+            <a href="http://">
+
+                <img src="${contextPath}site/${site.sourcepath}/resources/m/resources/img/858-1.jpg">
+
+            </a>
+
+        </div>
+        <div class="mui-slider-item">
+            <a href="http://">
+                <img src="${contextPath}site/${site.sourcepath}/resources/m/resources/img/858-2.jpg">
+
+            </a>
+        </div><div class="mui-slider-item">
+        <a href="http://">
+            <img src="${contextPath}site/${site.sourcepath}/resources/m/resources/img/858-3.jpg">
+
+
+        </a>
+    </div><div class="mui-slider-item">
+        <a href="http://">
+            <img src="${contextPath}site/${site.sourcepath}/resources/m/resources/img/858-4.jpg">
+
+
+        </a>
+    </div>
+    </div>
+    <div class="mui-slider-indicator n_mui-slider-indicator">
+        <div class="mui-indicator mui-active"></div>
+        <div class="mui-indicator"></div><div class="mui-indicator"></div><div class="mui-indicator"></div>			</div>
+</div>
+
+
+
+<div id="pullrefresh" class="mui-content mui-scroll-wrapper sx1">
+    <div class="mui-scroll">
+        <ul class="mui-table-view">
+
+            <@infoPage siteid="${site.id}" channelid="${currChannel.id}" num="10" page="${page}"
+            pagenum="${pagenum!0}" titleLen="38" dateFormat="yyyy-MM-dd"; infoList,pager>
+
+            <#list infoList as info>
+            <li class="mui-table-view-cell mui-media">
+
+
+                <a href="${info.pageH5url}">
+                    <img class="mui-media-object mui-pull-left n-media-object1" src="${info.img}">
+                    <div class="mui-media-body fz14 color_gray40 line-ht18 n-media-body2">
+                        <h4 class="mui-ellipsis-2 fz16  margin_none">${info.showtitle}</h4>
+                        <div class="text_indent"></div>
+                    </div>
+                </a>
+
+            </li>
+            </#list>
+        </@infoPage>
+
+        </ul>
+
+    </div>
+
+</div>
+
+<nav class=" mui-bar mui-bar-tab black_bg">
+
+    <a href="${contextPath}site/${site.sourcepath}/m/gywz/index.html" <#if currChannel.parid=='26ea90c8-8b6b-424b-ad87-37eef0ebfef8'>  class="n-tab-item n-active"  </#if> class="n-tab-item" >
+    <img <#if currChannel.parid=='26ea90c8-8b6b-424b-ad87-37eef0ebfef8'> src="${contextPath}site/${site.sourcepath}/resources/m/resources/img/nav-1-hover.png" </#if> src="${contextPath}site/${site.sourcepath}/resources/m/resources/img/nav-1.png"  class="n-icon-doc_pinp mui-icon">
+    <span class="mui-tab-label fz15">关于我们  </span>
+    </a>
+    <a href="${contextPath}site/${site.sourcepath}/m/zyyj/index.html" <#if currChannel.parid=='0faa9fa1-e0bf-4b60-99c8-baca779033fa'>  class="n-tab-item n-active"  </#if> class="n-tab-item">
+    <img <#if currChannel.parid=='0faa9fa1-e0bf-4b60-99c8-baca779033fa'> src="${contextPath}site/${site.sourcepath}/resources/m/resources/img/nav-2-hover.png" </#if> src="${contextPath}site/${site.sourcepath}/resources/m/resources/img/nav-2.png"  class="n-icon-doc_pinp mui-icon">
+
+    <span class="mui-tab-label fz15">业绩展示</span>
+    </a>
+    <a href="${contextPath}site/${site.sourcepath}/m/news/index.html" <#if currChannel.parid=='d3931a93-4589-4c32-99a8-6a09ea2c1d3f'>  class="n-tab-item n-active"  </#if> class="n-tab-item">
+    <img <#if currChannel.parid=='d3931a93-4589-4c32-99a8-6a09ea2c1d3f'> src="${contextPath}site/${site.sourcepath}/resources/m/resources/img/nav-3-hover.png" </#if> src="${contextPath}site/${site.sourcepath}/resources/m/resources/img/nav-3.png"   class="n-icon-doc_pinp mui-icon">
+    <span class="mui-tab-label fz15">武咨动态</span>
+    </a>
+</nav>
+
+<script type="text/javascript" charset="utf-8">
+    mui.init({
+        swipeBack:true //启用右滑关闭功能
+    });
+    var slider = mui("#slider");
+    slider.slider({
+        interval:3000
+    });
+</script>
+
+
+<script>
+    mui.init({
+        swipeBack: false,
+        pullRefresh: {
+            container: '#pullrefresh',
+            up: {
+                contentrefresh: '正在加载...',
+                callback: pullupRefresh
+            }
+        }
+    });
+
+    var count = 1;
+    /**
+     * 上拉加载具体业务实现
+     */
+    function pullupRefresh() {
+        setTimeout(function() {
+
+
+
+            $.get('${contextPath}site/${site.sourcepath}/m/${currChannel.pagemark}/index_'+count+'.html',function(data){
+
+                if(data == 200){
+                    mui('#pullrefresh').pullRefresh().endPullupToRefresh((true));
+                }else{
+                    mui('#pullrefresh').pullRefresh().endPullupToRefresh((false));
+                    /*for(var i=0;i<data.length;i++){
+                        //alert(data[i]['nid']);
+                        var table = document.body.querySelector('.mui-table-view');
+                        var cells = document.body.querySelectorAll('.mui-table-view-cell');
+                        var li = document.createElement('li');
+                        li.className = 'mui-table-view-cell';
+                        var id = data[i].nid;
+                        li.innerHTML = '<a href="/index.php/Home/Index/xq/nid/'+id+'.html"><img class="mui-media-object mui-pull-left n-media-object1" src="/Uploads/content/'+data[i].image+'"><div class="mui-media-body fz14 color_gray40 line-ht18 n-media-body2"><h4 class="mui-ellipsis-2 fz16 margin_none">'+data[i].title+'</h4><div class="text_indent"></div></div></a>';
+                        table.appendChild(li);
+                        count++;
+                    }*/
+                    var table = $('.mui-table-view');
+
+                    var lidata = $(data).find(".mui-table-view-cell");
+                    for(var i=0;i<lidata.length;i++){
+                        table.append(lidata[i]);
+                        count++;
+                    }
+                }
+            },'html')
+        }, 1000);
+    }
+</script>
+
+<!--根据轮播图的高度获取下拉刷新头部的位置-->
+
+<script>
+    mui('body').on('tap','a',function(){document.location.href=this.href;});
+</script>
+<!--根据轮播图的高度获取下拉刷新头部的位置-->
+</body>
+</html>

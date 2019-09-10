@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>武汉市工程咨询部</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" href="${contextPath}site/${site.sourcepath}/resources/m/resources/css/mui.min.css" />
+    <link rel="stylesheet" href="${contextPath}site/${site.sourcepath}/resources/m/resources/css/n_haoxq.css" />
+    <script type="text/javascript" src="${contextPath}site/${site.sourcepath}/resources/m/resources/js/jquery-2.1.0.js"></script>
+    <script type="text/javascript" src="${contextPath}site/${site.sourcepath}/resources/m/resources/js/mui.min.js"></script>
+</head>
+
+<body style="overflow:hidden;">
+
+<div class="mui-content nav_btm_pd">
+    <div class="mui-slider" id="slider">
+        <div class="mui-slider-group mui-slider-loop" style="transform: translate3d(-320px, 0px, 0px) translateZ(0px);">
+            <div class="mui-slider-item mui-slider-item-duplicate mui-slider">
+                <a href="http://">
+                    <img src="${contextPath}site/${site.sourcepath}/resources/m/resources/img/858-1.jpg">
+                </a>
+            </div>
+            <div class="mui-slider-item">
+                <a href="http://">
+                    <img src="${contextPath}site/${site.sourcepath}/resources/m/resources/img/858-2.jpg">
+
+                </a>
+            </div><div class="mui-slider-item">
+            <a href="http://">
+                <img src="${contextPath}site/${site.sourcepath}/resources/m/resources/img/858-3.jpg">
+
+            </a>
+        </div><div class="mui-slider-item">
+            <a href="http://">
+                <img src="${contextPath}site/${site.sourcepath}/resources/m/resources/img/858-4.jpg">
+
+            </a>
+        </div>
+        </div>
+        <div class="mui-slider-indicator n_mui-slider-indicator">
+            <div class="mui-indicator mui-active"></div>
+            <div class="mui-indicator"></div><div class="mui-indicator"></div><div class="mui-indicator"></div>			</div>
+    </div>
+    <ul class="mui-table-view mui-grid-view mui-grid-9" style="background:#efeff4 !important;overflow-y:auto">
+
+        <@channelList siteid="${site.id}" parid="${currChannel.id}" navigation="1" ;channel,index>
+
+        <li class="mui-table-view-cell mui-media mui-col-xs-4 gyxg ">
+            <a href="${channel.pageH5url}">
+
+              <!--  <span><img class="gyxgimg" src='${contextPath}site/${site.sourcepath}/m/resoureces/img/gywm-${index+1}.png'></span>-->
+
+                <span><img class="gyxgimg"  src="${contextPath}${(channel.img!"")?replace("/", "" , "f")}"></span>
+
+
+                <div class="mui-media-body gyxg1">${channel.name}</div></a>
+        </li>
+
+       </@channelList>
+
+
+
+
+
+    </ul>
+</div>
+
+<nav class=" mui-bar mui-bar-tab black_bg">
+    <a href="${contextPath}site/${site.sourcepath}/m/gywz/index.html" <#if currChannel.pagemark=='gywz'>  class="n-tab-item n-active"  </#if> class="n-tab-item" >
+        <img <#if currChannel.pagemark=='gywz'> src="${contextPath}site/${site.sourcepath}/resources/m/resources/img/nav-1-hover.png" </#if> src="${contextPath}site/${site.sourcepath}/resources/m/resources/img/nav-1.png"  class="n-icon-doc_pinp mui-icon">
+        <span class="mui-tab-label fz15">关于我们  </span>
+    </a>
+    <a href="${contextPath}site/${site.sourcepath}/m/zyyj/index.html" <#if currChannel.pagemark=='zyyj'>  class="n-tab-item n-active"  </#if> class="n-tab-item">
+        <img <#if currChannel.pagemark=='zyyj'> src="${contextPath}site/${site.sourcepath}/resources/m/resources/img/nav-2-hover.png" </#if> src="${contextPath}site/${site.sourcepath}/resources/m/resources/img/nav-2.png"  class="n-icon-doc_pinp mui-icon">
+
+        <span class="mui-tab-label fz15">业绩展示</span>
+    </a>
+    <a href="${contextPath}site/${site.sourcepath}/m/news/index.html" <#if currChannel.pagemark=='news'>  class="n-tab-item n-active"  </#if> class="n-tab-item">
+        <img <#if currChannel.pagemark=='news'> src="${contextPath}site/${site.sourcepath}/resources/m/resources/img/nav-3-hover.png" </#if> src="${contextPath}site/${site.sourcepath}/resources/m/resources/img/nav-3.png"   class="n-icon-doc_pinp mui-icon">
+        <span class="mui-tab-label fz15">武咨动态</span>
+    </a>
+</nav>
+<script type="text/javascript" charset="utf-8">
+    mui.init({
+        swipeBack:true //启用右滑关闭功能
+    });
+    var slider = mui("#slider");
+    slider.slider({
+        interval:3000
+    });
+</script>
+</body>
+
+</html>
